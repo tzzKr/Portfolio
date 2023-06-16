@@ -1,0 +1,135 @@
+.introContainer {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    background-color: #141D2F;
+    padding-top: 110px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    
+    
+    span {
+        color: #fff;
+    }
+}
+
+.introTextContainer{
+    display: flex;
+}
+
+.introNameContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0
+    
+}
+.introIam{
+    transform: rotate(-90deg) translate(7%, 40%);
+    font-size: 64px;
+    font-weight: 400;
+    
+
+}
+.introName {
+    font-size: 90px;
+    font-weight: 700;
+}
+.introDev {
+    font-size: 63px;
+    font-weight: 400;
+    color: #FF4747 !important; 
+    transform: translate(0%, -35%);
+
+}
+
+.roundedBackground {
+    width: 100vw;
+    max-width: 100%;
+    height: unset !important;
+    position: absolute;
+    top: 377px;
+    z-index: 1;
+}
+.contactBtn{
+    font-size: 23px;
+    font-weight: 400;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: #FA7902;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.introRightSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+
+}
+
+.imageShadow{
+    position: absolute;
+    width: 700px;
+    top: 300px;
+    left: 0;
+}
+
+.introImage{
+    position: absolute;
+    padding-top: 50px;
+    left: 0;
+    z-index: 1;
+    height: 700px;
+}
+
+.introFooter{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: space-between;
+    bottom: 30px;
+    z-index: 2;
+    right: 0;
+    left: 0;
+    margin-right: 100px;
+    
+}
+.introLinks{
+    display: flex;
+align-items: center;
+gap: 42px;
+
+}
+
+.redLine{
+    height: 2px;
+    width: 100px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #FF4747;
+}
+
+.scrollDown{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    span {
+        transform: rotate(90deg) translate(-60%, -5%);
+        font-size: 23px;
+    }
+    
+    img{
+        width: 30px;
+        height: 30px;
+    }
+}
