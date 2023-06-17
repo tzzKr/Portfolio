@@ -1,0 +1,44 @@
+.background {
+  background-color: #141d2f;
+  height: 300px;
+  width: 100vw;
+  max-width: 100%;
+  position: relative;
+  color: #fff;
+  border-top: 4px solid #fa7902;
+}
+
+.content {
+  max-width: 1920px;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 0 100px;
+  position: relative;
+  box-sizing: border-box;
+
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoImprint {
+  display: flex;
+  flex-direction: column;
+
+ 
+
+  img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.socials{
+  display: flex;
+  gap: 42px;
+  align-items: center;
+}
+.copyright{
+  font-size: 23px;
+}
