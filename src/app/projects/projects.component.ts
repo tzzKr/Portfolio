@@ -16,7 +16,9 @@ export class ProjectsComponent {
       url: '',
       github: '',
       technologies: ['HTML', 'CSS', 'JavaScript'],
-      side: ''
+      side: '',
+      sidebtn: ''
+
     },
     {
       name: 'Join',
@@ -25,7 +27,8 @@ export class ProjectsComponent {
       url: '',
       github: '',
       technologies: ['HTML', 'CSS', 'JavaScript'],
-      side: 'flex-direction: row-reverse; text-align: end'
+      side: 'flex-direction: row-reverse; text-align: end;',
+      sidebtn: 'justify-content: flex-end;'
     },
     {
       name: 'Pokedex',
@@ -34,7 +37,9 @@ export class ProjectsComponent {
       url: '',
       github: '',
       technologies: ['HTML', 'CSS', 'JavaScript', 'API'],
-      side: ''
+      side: '',
+      sidebtn: ''
+
     },
     {
       name: 'Ring Of Fire',
@@ -43,7 +48,9 @@ export class ProjectsComponent {
       url: '',
       github: '',
       technologies: ['HTML', 'SCSS', 'TypeScript', 'Material Design', 'Angular', 'Firebase'],
-      side: 'flex-direction: row-reverse; text-align: end'
+      side: 'flex-direction: row-reverse; text-align: end; ',
+      sidebtn: 'justify-content: flex-end;'
+
     },
 
 
