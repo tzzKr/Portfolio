@@ -1,0 +1,134 @@
+.background {
+  background-color: #141d2f;
+  height: 62vh;
+  width: 100vw;
+  max-width: 100%;
+  position: relative;
+  color: #fff;
+}
+
+.content {
+  max-width: 1920px;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 0 100px;
+  position: relative;
+  box-sizing: border-box;
+
+  height: 100%;
+
+  span {
+    font-size: 90px;
+    font-weight: 700;
+  }
+}
+
+.contactContainer {
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    font-size: 16px;
+  }
+}
+
+.contactText {
+  width: 473px;
+}
+.mainPhrase {
+  font-weight: 700;
+  font-size: 32px !important;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 35px;
+  justify-content: center;
+  align-items: center;
+
+  button{
+    font-size: 23px;
+    font-weight: 400;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    width: 250px;
+    background-color: #FA7902
+  }
+
+  input {
+    width: 617px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #141d2f;
+    border: 1px solid #ff4747;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+
+  textarea{
+    width: 617px;
+    height: 150px;
+    min-height: 150px;
+    border-radius: 10px;
+    background-color: #141d2f;
+    border: 1px solid #ff4747;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    resize: vertical;
+    max-height: 400px;
+  }
+
+  input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+
+  input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+  }
+
+  input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white;
+  }
+
+  textarea::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+
+  textarea:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+  }
+
+  textarea::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white;
+  }
+}
+
+.redLine{
+  height: 4px;
+  width: 100px;
+  background-color: #ff4747;
+  position: absolute;
+  left: 0;
+  top: 70px;
+}
+
+.scrollUp{
+  position: absolute;
+  right: 100px;
+  bottom: 90px;
+
+}

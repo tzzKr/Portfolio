@@ -1,5 +1,16 @@
 <div class="background">
     <div class="content">
-        
+        <div class="projectsBox" [style]="project.side" *ngFor="let project of projekts">
+            <img [src]="project.image" alt="">
+            <div class="description">
+                <span>{{project.name}}</span>
+                   <p class="technologies">{{project.technologies.join(' | ')}}</p>
+                   <p> {{project.description}}</p>
+                   <div class="btns">
+                    <button class="lifeBtn">Live test</button>
+                    <button class="gitBtn">Github</button>
+                   </div>
+            </div>
+        </div>
     </div>
 </div>

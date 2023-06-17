@@ -1,6 +1,6 @@
 .background {
     background-color: #141d2f;
-    height: 100vh;
+    height: fit-content;
     width: 100vw;
     max-width: 100%;
     position: relative;
@@ -16,4 +16,52 @@
     box-sizing: border-box;
   
     height: 100%;
+  }
+
+  .projectsBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    span{
+      font-size: 32px;
+      font-weight: 700;
+      color: #FF4747 !important;
+      
+    }
+    button{
+      font-size: 23px;
+    font-weight: 400;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    }
+  }
+
+  .technologies{
+    font-size: 23px;
+    font-weight: 400;
+    color: #FA7902 !important;
+  }
+
+  .lifeBtn{
+   
+    background-color: #FF4747;
+   
+  }
+
+  .gitBtn{
+    background-color: #141d2f;
+    border: 1px solid #FA7902 !important;
+  }
+  .description{
+    width: 510px;
+  }
+
+  .btns{
+    display: flex;
+    gap: 90px;
   }
