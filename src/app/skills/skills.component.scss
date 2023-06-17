@@ -53,6 +53,11 @@
     cursor: pointer;
     width: 200px;
     margin-top: 20px;
+
+    &:hover{
+      background-color: #FF4747;
+      transform: scale(1.1);
+  }
     
   }
 }

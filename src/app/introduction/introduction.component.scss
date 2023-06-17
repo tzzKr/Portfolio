@@ -72,7 +72,14 @@ padding: 0 100px;;
     background-color: #FA7902;
     border: none;
     color: #fff;
+    transition: all 0.05s ease-in-out;
     cursor: pointer;
+
+    &:hover{
+        background-color: #FF4747;
+        transform: scale(1.1);
+    }
+    
 }
 
 .introRightSide{
@@ -81,7 +88,7 @@ padding: 0 100px;;
     justify-content: center;
     align-items: center;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     top: 300px;
 
 }

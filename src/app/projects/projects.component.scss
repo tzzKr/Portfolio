@@ -38,6 +38,9 @@
     border: none;
     color: #fff;
     cursor: pointer;
+    transition: all 0.05s ease-in-out;
+
+   
     }
   }
 
@@ -51,11 +54,18 @@
    
     background-color: #FF4747;
    
+    &:hover{
+      background-color: #FA7902 ;
+  }
   }
 
   .gitBtn{
     background-color: #141d2f;
     border: 1px solid #FA7902 !important;
+
+    &:hover{
+      background-color: #FA7902 ;
+  }
   }
   .description{
     width: 510px;
