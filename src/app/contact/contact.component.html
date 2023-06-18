@@ -10,14 +10,16 @@
         </p>
         <p>Need a Frontend developer? <b>Contact me!</b></p>
       </div>
-      <div class="inputContainer">
-        <input class="input" placeholder="Your name" type="text" />
-        <input class="input" placeholder="Your email" type="text" />
-        <textarea placeholder="Your message"> </textarea>
-        <button>Send message</button>
+      <div >
+        <form class="inputContainer" ngNativeValidate (submit)="sendMail()" #myForm>
+          <input class="input" placeholder="Your name" type="text" name="message" #nameField/>
+          <input required class="input" placeholder="Your email" type="text" name="name" #emailField/>
+          <textarea placeholder="Your message" name="message" #messageField></textarea>
+          <button #sendBtn>Send message</button>
+        </form>
       </div>
     </div>
   </div>
   <div class="redLine"></div>
-  <img class="scrollUp" src="./assets/img/GoUpButton.svg" alt="">
+  <img class="scrollUp" src="./assets/img/GoUpButton.svg" alt="" />
 </div>
