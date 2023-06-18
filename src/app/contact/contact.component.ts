@@ -35,7 +35,7 @@ export class ContactComponent {
 
     let fd = new FormData();
     fd.append('name', nameField.value);
-    fd.append('name', emailField.value);
+    fd.append('email', emailField.value);
     fd.append('message', messageField.value);
     await fetch('https://gerhard-baliet.developerakademie.net/send_mail/send_mail.php',
       {
