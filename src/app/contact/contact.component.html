@@ -10,16 +10,51 @@
         </p>
         <p>Need a Frontend developer? <b>Contact me!</b></p>
       </div>
-      <div >
-        <form class="inputContainer" ngNativeValidate (submit)="sendMail()" #myForm>
-          <input class="input" placeholder="Your name" type="text" name="message" #nameField/>
-          <input required class="input" placeholder="Your email" type="text" name="email" #emailField/>
-          <textarea placeholder="Your message" name="message" #messageField></textarea>
+      <div style="position: relative;">
+        
+        <div *ngIf="showMail" class="mailLoader">
+          <div class="app-email-sent" *ngIf="showMailSuccess" [class.show]="showMailSuccess">
+            Ihre E-Mail wurde gesendet!
+          </div>
+          <div *ngIf="showMailLoader" class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <form
+          class="inputContainer"
+          ngNativeValidate
+          (submit)="sendMail()"
+          #myForm
+        >
+          <input
+            class="input"
+            placeholder="Your name"
+            type="text"
+            name="message"
+            #nameField
+          />
+          <input
+            required
+            class="input"
+            placeholder="Your email"
+            type="text"
+            name="email"
+            #emailField
+          />
+          <textarea
+            placeholder="Your message"
+            name="message"
+            #messageField
+          ></textarea>
           <button #sendBtn>Send message</button>
         </form>
       </div>
     </div>
   </div>
+ 
   <div class="redLine"></div>
   <img class="scrollUp" src="./assets/img/GoUpButton.svg" alt="" />
 </div>

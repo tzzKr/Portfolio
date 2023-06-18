@@ -7,6 +7,9 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 })
 export class ContactComponent {
 
+  showMailLoader = false;
+  showMailSuccess = false;
+  showMail = false;
 
   @ViewChild('myForm')myForm!: ElementRef;
   @ViewChild('nameField')nameField!: ElementRef;
@@ -14,6 +17,8 @@ export class ContactComponent {
   @ViewChild('messageField')messageField!: ElementRef;
   @ViewChild('sendBtn')sendBtn!: ElementRef;
 
+
+  
   async sendMail() {
     
     let nameField = this.nameField.nativeElement;
@@ -26,7 +31,9 @@ export class ContactComponent {
     messageField.disabled = true
     sendBtn.disabled = true;
 
-
+    //loader anzeigen
+    this.showMail = true;
+    this.showMailLoader = true;
 //animation
 
 
@@ -43,6 +50,18 @@ export class ContactComponent {
         body: fd
       }
       )
+
+    //loader ausblenden
+    this.showMailLoader = false;
+    this.showMailSuccess = true;
+    this.myForm.nativeElement.reset();
+    this.showMail = true;
+    setTimeout(() => {
+      this.showMailSuccess = false;
+    this.showMail = false;
+
+    }, 500);
+
 
       //text anzeigen erfolgreich gesendet
 
