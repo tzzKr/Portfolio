@@ -10,10 +10,13 @@
         </p>
         <p>Need a Frontend developer? <b>Contact me!</b></p>
       </div>
-      <div style="position: relative;">
-        
+      <div style="position: relative">
         <div *ngIf="showMail" class="mailLoader">
-          <div class="app-email-sent" *ngIf="showMailSuccess" [class.show]="showMailSuccess">
+          <div
+            class="app-email-sent"
+            *ngIf="showMailSuccess"
+            [class.show]="showMailSuccess"
+          >
             Ihre E-Mail wurde gesendet!
           </div>
           <div *ngIf="showMailLoader" class="lds-ellipsis">
@@ -30,13 +33,29 @@
           #myForm
         >
           <input
+            (click)="checkinputStatus('name')"
+            (keyup)="checkinputStatus('name')"
+            required
             class="input"
             placeholder="Your name"
             type="text"
             name="message"
             #nameField
           />
+          <div class="inputStatus">
+            <img
+              *ngIf="nameSuccess"
+              src="./assets/img/greenSuccess.svg"
+              alt=""
+            /><img src="" alt="" />
+            <img *ngIf="nameWarning" src="./assets/img/redWarning.svg" alt="" />
+          </div>
+          <p *ngIf="nameWarning" class="required" style="">
+            Your name is required
+          </p>
           <input
+            (click)="checkinputStatus('email')"
+            (keyup)="checkinputStatus('email')"
             required
             class="input"
             placeholder="Your email"
@@ -44,17 +63,52 @@
             name="email"
             #emailField
           />
+          <div class="inputStatus" style="top: 137px"> 
+            <img
+              *ngIf="emailSuccess"
+              src="./assets/img/greenSuccess.svg"
+              alt=""
+            /><img src="" alt="" />
+            <img
+              *ngIf="emailWarning"
+              src="./assets/img/redWarning.svg"
+              alt=""
+            />
+          </div>
+          <p *ngIf="emailWarning" class="required" style="top: 170px">
+            Your email is required
+          </p>
+
           <textarea
+            (click)="checkinputStatus('message')"
+            (keyup)="checkinputStatus('message')"
+            required
             placeholder="Your message"
             name="message"
             #messageField
           ></textarea>
+          <div class="inputStatus" style="top: 224px">
+            <img
+              *ngIf="messageSuccess"
+              src="./assets/img/greenSuccess.svg"
+              alt=""
+            /><img src="" alt="" />
+            <img
+              *ngIf="messageWarning"
+              src="./assets/img/redWarning.svg"
+              alt=""
+            />
+          </div>
+          <p *ngIf="messageWarning" class="required" style="top: 355px ">
+            Your message is required
+          </p>
+
           <button #sendBtn>Send message</button>
         </form>
       </div>
     </div>
   </div>
- 
+
   <div class="redLine"></div>
   <img class="scrollUp" src="./assets/img/GoUpButton.svg" alt="" />
 </div>

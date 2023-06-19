@@ -7,8 +7,8 @@
                    <p class="technologies">{{project.technologies.join(' | ')}}</p>
                    <p> {{project.description}}</p>
                    <div class="btns" [style]="project.sidebtn">
-                    <button class="lifeBtn">Live test</button>
-                    <button class="gitBtn">Github</button>
+                    <a [href]="project.url" target="_blank" class="lifeBtn">Live test</a>
+                    <a [href]="project.github" target="_blank" class="gitBtn">Github</a>
                    </div>
             </div>
         </div>
