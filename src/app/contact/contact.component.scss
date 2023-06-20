@@ -5,6 +5,7 @@
   max-width: 100%;
   position: relative;
   color: #fff;
+  overflow: hidden;
 }
 
 .content {
@@ -58,6 +59,11 @@
     width: 250px;
     background-color: #fa7902;
     cursor: pointer;
+
+    &:hover {
+      background-color: #ff4747;
+      transform: scale(1.05);
+    }
   }
 
   input {
@@ -262,4 +268,11 @@
   img {
     position: absolute;
   }
+}
+
+.shadowBg{
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  transform: translate(-24%, 50%) scaleX(-1) scale(1.2) rotate(164deg);
 }

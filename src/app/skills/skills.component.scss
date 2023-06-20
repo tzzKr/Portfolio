@@ -5,6 +5,8 @@
   max-width: 100%;
   position: relative;
   color: #fff;
+
+  overflow: hidden;
 }
 
 .content {
@@ -78,6 +80,10 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+
+    &:hover{
+      transform: translate(0, -10px);
+  }
 }
 
 .lineShape{
@@ -87,4 +93,11 @@ width: 58px;
 background-color: #FF4747;
 top: calc(50% - 100px);
 right: 0;
+}
+
+.shadowBg{
+position: absolute;
+top: 0;
+transform: scaley(-1) translate(-66%, -60%);
+
 }

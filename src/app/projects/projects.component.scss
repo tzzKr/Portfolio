@@ -5,6 +5,7 @@
     max-width: 100%;
     position: relative;
     color: #fff;
+    overflow: hidden;
   }
 
   .content {
@@ -14,7 +15,7 @@
     padding: 0 100px;
     position: relative;
     box-sizing: border-box;
-  
+  z-index: 2;
     height: 100%;
   }
 
@@ -75,4 +76,17 @@
   .btns{
     display: flex;
     gap: 90px;
+  }
+  .shadowBg{
+    position: absolute;
+    top: 40%;
+    transform: translate(-90px, 0);
+    left: 0;
+  }
+
+  .shadowBg2{
+    position: absolute;
+    top: 60%;
+    transform: translate(60%, 0) rotate(90deg);
+    right: 0;
   }
