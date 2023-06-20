@@ -9,18 +9,21 @@ export class ContactComponent {
   showMailLoader = false;
   showMailSuccess = false;
   showMail = false;
-  nameWarning = false;
-  nameSuccess = false;
-  emailWarning = false;
-  emailSuccess = false;
-  messageWarning = false;
-  messageSuccess = false;
+ 
+
+  fieldStatus = {
+    name: { warning: false, success: false },
+    email: { warning: false, success: false },
+    message: { warning: false, success: false }
+  };
+
 
   @ViewChild('myForm') myForm!: ElementRef;
   @ViewChild('nameField') nameField!: ElementRef;
   @ViewChild('emailField') emailField!: ElementRef;
   @ViewChild('messageField') messageField!: ElementRef;
   @ViewChild('sendBtn') sendBtn!: ElementRef;
+name: any;
 
   async sendMail() {
     let nameField = this.nameField.nativeElement;
@@ -71,30 +74,29 @@ export class ContactComponent {
     sendBtn.disabled = false;
   }
 
-  checkinputStatus(status: string) {
-     
-    let field = status
+  
+  checkInputStatus(field: string) {
+    let fieldElement: ElementRef;
 
-    if (this.nameField.nativeElement.value.length === 0 && field == 'name') {
-      this.nameWarning = true;
-      this.nameSuccess = false;
-    } else if (this.nameField.nativeElement.value.length > 0 && field == 'name') {
-      this.nameWarning = false;
-      this.nameSuccess = true;
+    switch (field) {
+      case 'name':
+        fieldElement = this.nameField;
+        break;
+      case 'email':
+        fieldElement = this.emailField;
+        break;
+      case 'message':
+        fieldElement = this.messageField;
+        break;
+      default:
+        console.error(`Unexpected field: ${field}`);
+        return;
     }
-    if (this.emailField.nativeElement.value.length === 0 && field == 'email') {
-      this.emailWarning = true;
-      this.emailSuccess = false;
-    } else if (this.emailField.nativeElement.value.length > 0 && field == 'email') {
-      this.emailWarning = false;
-      this.emailSuccess = true;
-    }
-    if (this.messageField.nativeElement.value.length === 0 && field == 'message') {
-      this.messageWarning = true;
-      this.messageSuccess = false;
-    } else if (this.messageField.nativeElement.value.length > 0 && field == 'message') {
-      this.messageWarning = false;
-      this.messageSuccess = true;
-    }
+
+    const isFieldEmpty = fieldElement.nativeElement.value.length === 0;
+    this.fieldStatus[field].warning = isFieldEmpty;
+    this.fieldStatus[field].success = !isFieldEmpty;
+
+    
   }
 }

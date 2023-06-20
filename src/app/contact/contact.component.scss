@@ -48,7 +48,7 @@
   justify-content: center;
   align-items: center;
 
-  button{
+  button {
     font-size: 23px;
     font-weight: 400;
     padding: 15px 30px;
@@ -56,7 +56,7 @@
     border: none;
     color: #fff;
     width: 250px;
-    background-color: #FA7902;
+    background-color: #fa7902;
     cursor: pointer;
   }
 
@@ -72,12 +72,16 @@
     font-size: 16px;
     font-weight: 400;
 
-    &:hover{
-      border: 1px solid #FA7902;
+    &:hover {
+      border: 1px solid #fa7902;
+    }
+
+    &:focus {
+      outline: none;
     }
   }
 
-  textarea{
+  textarea {
     width: 617px;
     height: 150px;
     min-height: 150px;
@@ -90,10 +94,13 @@
     resize: vertical;
     max-height: 400px;
     font-size: 16px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
-    &:hover{
-      border: 1px solid #FA7902;
+    &:hover {
+      border: 1px solid #fa7902;
+    }
+    &:focus {
+      outline: none;
     }
   }
 
@@ -130,7 +137,7 @@
   }
 }
 
-.redLine{
+.redLine {
   height: 4px;
   width: 100px;
   background-color: #ff4747;
@@ -139,14 +146,13 @@
   top: 70px;
 }
 
-.scrollUp{
+.scrollUp {
   position: absolute;
   right: 100px;
   bottom: 90px;
-
 }
 
-.mailLoader{
+.mailLoader {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -156,7 +162,7 @@
   margin-top: 50px;
   flex-direction: column;
 
-  p{
+  p {
     width: 50px;
     text-align: center;
   }
@@ -226,7 +232,6 @@
   50% {
     opacity: 1;
     transform: scale(1.1);
-
   }
   100% {
     opacity: 0;
@@ -240,7 +245,7 @@
   }
 }
 
-.required{
+.required {
   color: #ff4747 !important;
   font-size: 12px !important;
   font-weight: 400 !important;
@@ -249,12 +254,12 @@
   top: 85px;
 }
 
-.inputStatus{
+.inputStatus {
   position: absolute;
   top: 50px;
   right: 50px;
 
-  img{
+  img {
     position: absolute;
   }
 }
