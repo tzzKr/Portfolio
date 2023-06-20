@@ -38,6 +38,14 @@
   display: flex;
   gap: 42px;
   align-items: center;
+  cursor: pointer;
+
+
+  img{
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
 }
 .copyright{
   font-size: 23px;

@@ -70,6 +70,8 @@
     flex-wrap: wrap;
     row-gap: 50px;
     column-gap: 70px;
+    position: relative;
+    z-index: 2;
 }
 
 .iconBox{
