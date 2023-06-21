@@ -24,7 +24,7 @@ export class ProjectsComponent {
       name: 'Join',
       description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       image: './assets/img/MockUps/Join.png',
-      url: 'https://erhard-baliet.developerakademie.net/Programming/Projekte/modul_10/Join-Project/index.html',
+      url: 'https://gerhard-baliet.developerakademie.net/Programming/Projekte/modul_10/Join-Project/index.html',
       github: 'https://github.com/tzzKr/Join-Project',
       technologies: ['HTML', 'CSS', 'JavaScript'],
       side: 'flex-direction: row-reverse; text-align: end;',
