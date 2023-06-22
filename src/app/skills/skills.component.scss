@@ -1,12 +1,11 @@
 .background {
   background-color: #141d2f;
-  height: 100vh;
+  height: 800px;
   width: 100vw;
   max-width: 100%;
   position: relative;
   color: #fff;
-
-  overflow: hidden;
+  z-index: 3;
 }
 
 .content {
@@ -44,7 +43,10 @@
   text-align: right;
 
   }
-  button {
+  a {
+    width: fit-content !important;
+    display: flex;
+    justify-content: center;
     font-size: 23px;
     font-weight: 400;
     padding: 15px 30px;
@@ -100,6 +102,8 @@ right: 0;
 .shadowBg{
 position: absolute;
 top: 0;
-transform: scaley(-1) translate(-66%, -60%);
+transform: scaley(-1) translate(-66%, -40%);
+
+
 
 }
