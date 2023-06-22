@@ -45,7 +45,7 @@ export class ProjectsComponent {
       name: 'Ring Of Fire',
       description: 'A website for a restaurant',
       image: './assets/img/MockUps/Ringoffire.png',
-      url: '',
+      url: 'https://ring-of-fire-dbe91.web.app/',
       github: 'https://github.com/tzzKr/RingOfFire',
       technologies: ['HTML', 'SCSS', 'TypeScript', 'Material Design', 'Angular', 'Firebase'],
       side: 'flex-direction: row-reverse; text-align: end; ',
