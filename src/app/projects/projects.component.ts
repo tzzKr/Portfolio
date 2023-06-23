@@ -43,7 +43,7 @@ export class ProjectsComponent {
     },
     {
       name: 'Ring Of Fire',
-      description: 'A website for a restaurant',
+      description: 'Engage in a fun multiplayer drinking game with a deck of cards, powered by Google Firebase. Play with friends and enjoy',
       image: './assets/img/MockUps/Ringoffire.png',
       url: 'https://ring-of-fire-dbe91.web.app/',
       github: 'https://github.com/tzzKr/RingOfFire',
