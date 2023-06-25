@@ -14,6 +14,9 @@ import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ImprintComponent } from './imprint/imprint.component';
 import { PortfolioMasterComponent } from './portfolio-master/portfolio-master.component';
+import { MobileIntroComponent } from './mobile-intro/mobile-intro.component';
+import { MobileAboutComponent } from './mobile-about/mobile-about.component';
+import { MobileSkillsComponent } from './mobile-skills/mobile-skills.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { PortfolioMasterComponent } from './portfolio-master/portfolio-master.co
     ContactComponent,
     FooterComponent,
     ImprintComponent,
-    PortfolioMasterComponent
+    PortfolioMasterComponent,
+    MobileIntroComponent,
+    MobileAboutComponent,
+    MobileSkillsComponent
     
   ],
   imports: [

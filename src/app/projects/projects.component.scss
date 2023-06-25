@@ -90,3 +90,22 @@
     transform: translate(60%, 0) rotate(90deg);
     right: 0;
   }
+
+  @media (max-width: 1185px) {
+    .projectsBox{
+      flex-direction: column !important;
+      align-items: flex-start;
+      gap: 20px;
+      align-items: center;
+      text-align: center !important;
+     
+      a{
+        font-size: 18px;
+      }
+    }
+    .btns{
+      justify-content: center !important;; 
+    }
+  }
+    
+  

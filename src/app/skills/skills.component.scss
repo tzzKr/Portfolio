@@ -107,3 +107,23 @@ transform: scaley(-1) translate(-66%, -40%);
 
 
 }
+
+@media (max-width: 391px) {
+
+  .content {
+    padding: 0 20px;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column-reverse;
+  } 
+
+  .mySkillsContainer{
+    justify-content: flex-end;
+
+
+
+    span{
+      font-size: 45px;
+    }
+  }
+}

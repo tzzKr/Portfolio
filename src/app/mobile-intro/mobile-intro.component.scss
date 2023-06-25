@@ -1,0 +1,289 @@
+.background {
+    background-color: #141d2f;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    position: relative;
+    color: #fff;
+    z-index: 3;
+  overflow: hidden;
+  }
+  
+  .content {
+    margin-top: 110px;
+    padding: 0 100px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+
+  .imgShadow{
+    position: absolute;
+    
+  }
+
+  .ImageContainer{
+    position: relative;
+    z-index: 0;
+    height: 750px;
+    width: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .imgHero{
+    position: absolute;
+    z-index: 1;
+  }
+
+  .flatRoundedBackground{
+    position: absolute;
+    transform: translate(0, 100px);    
+    width: 100vw;
+    bottom: 0;
+  }
+  .introRightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .introTextContainer {
+    display: flex;
+  }
+
+  .contactBtn {
+    font-size: 23px;
+    font-weight: 400;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: #fa7902;
+    border: none;
+    color: #fff;
+    transition: all 0.05s ease-in-out;
+    text-decoration: none;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: #ff4747;
+      transform: scale(1.1);
+    }
+  }
+  .introIam {
+    transform: rotate(-90deg) translate(7%, 40%);
+    font-size: 64px;
+    font-weight: 400;
+  }
+
+  .introNameContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
+  .introName {
+    font-size: 90px;
+    font-weight: 700;
+  }
+  .introDev {
+    font-size: 63px;
+    font-weight: 400;
+    color: #ff4747 !important;
+    transform: translate(0%, -35%);
+  }
+
+  .introLinks {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 42px;
+    margin-top: 50px;
+  
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  
+    img {
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  @media (max-width: 1160px) {
+    
+    .flatRoundedBackground{
+      transform: translate(0, 50px);
+
+    }
+    .introTextContainer{
+      padding-right: 50px;
+      box-sizing: border-box;
+    }
+  }
+
+  @media (max-width: 1135px) {
+    
+    .flatRoundedBackground{
+      transform: translate(0, 0px);
+    }
+
+    .introIam {
+      font-size: 45px;
+    }
+    .introName {
+      font-size: 60px;
+    }
+    .introDev {
+      font-size: 42px;
+    }
+
+  }
+
+  @media (max-width: 900px) {
+    
+    .flatRoundedBackground{
+      transform: translate(0, -50px);
+    }
+  }
+
+  @media (max-width: 820px) {
+    
+    .flatRoundedBackground{
+      transform: translate(0, -100px);
+    }
+    .introIam {
+      font-size: 35px;
+    }
+    .introName {
+      font-size: 50px;
+    }
+    .introDev {
+      font-size: 35px;
+    }
+  }
+
+  @media (max-width: 720px) {
+    
+    .flatRoundedBackground{
+      transform: translate(0, -150px);
+    }
+    .content{
+      padding: 0 50px;
+    }
+
+    .introIam {
+      font-size: 35px;
+    }
+    .introName {
+      font-size: 50px;
+    }
+    .introDev {
+      font-size: 35px;
+    }
+
+  }
+
+  @media (max-width: 620px) {
+    
+    .flatRoundedBackground{
+      transform: translate(0, -250px);
+    }
+    .content{
+      padding: 0 0px;
+      margin-top: 200px;
+    }
+
+    .introIam {
+      font-size: 35px;
+    }
+    .introName {
+      font-size: 50px;
+    }
+    .introDev {
+      font-size: 35px;
+    }
+
+    .ImageContainer{
+      height: 600px;
+      width: 600px;
+    }
+
+    .introRightSide {
+    }
+  }
+
+  @media (max-width: 520px) {
+    
+    .flatRoundedBackground{
+      transform: translate(0, -350px);
+    }
+    .content{
+      padding: 0 0px;
+      margin-top: 300px;
+    }
+
+    .introIam {
+      font-size: 30px;
+    }
+    .introName {
+      font-size: 40px;
+    }
+    .introDev {
+      font-size: 28px;
+    }
+
+    .ImageContainer{
+      height: 500px;
+      width: 500px;
+    }
+
+    .introRightSide {
+    }
+  }
+
+  @media (max-width: 420px) {
+    
+    .flatRoundedBackground{
+      transform: translate(0, -400px);
+    }
+    .content{
+      padding: 0 0px;
+      margin-top: 300px;
+    }
+
+    .introIam {
+      font-size: 19px;
+    }
+    .introName {
+      font-size: 26px;
+    }
+    .introDev {
+      font-size: 18px;
+    }
+
+    .ImageContainer{
+      height: 500px;
+      width: 500px;
+    }
+
+    .contactBtn{
+      margin-top: 20px;
+    }
+  }

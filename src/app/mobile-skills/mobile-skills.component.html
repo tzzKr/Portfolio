@@ -1,0 +1,23 @@
+<div class="background">
+  <div class="content">
+    <div class="mySkillsContainer">
+      <div>
+        <span>My skills</span>
+      </div>
+      <p>
+        I have grown my frontend developments skills that have allowed me to
+        create different real projects.
+      </p>
+    </div>
+    <div class="parentIconContainer">
+      <div class="skillIconContainer">
+        <div class="iconBox" *ngFor="let icon of icons">
+          <img [src]="icon.url" alt="" />
+          <p>{{ icon.name }}</p>
+        </div>
+      </div>
+    </div>
+
+    <a href="#contactMobile">Get in touch</a>
+  </div>
+</div>

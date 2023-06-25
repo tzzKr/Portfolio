@@ -91,3 +91,27 @@ position: relative;
     width: 750px;
     transform: translate(50%, 0%);
 }
+
+@media (max-width: 391px) {
+
+  .content {
+    padding: 0 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .textContainer {
+    max-width: 100%;
+
+    span {
+      font-size: 45px;
+    }
+  }
+  .background{
+    padding-top: 60px;
+    height: fit-content;
+    padding-bottom: 60px;
+  }
+  .shapes{
+    display: none;
+  }
+}

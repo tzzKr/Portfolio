@@ -34,3 +34,18 @@
         }
     }
 }
+
+@media (max-width: 650px){
+    .header{
+        padding: 0 20px;
+
+        img{
+            max-width: 50px;
+            max-height: 50px;
+        }
+    }
+
+    .linkContainer{
+        display: none;
+    }
+}
