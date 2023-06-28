@@ -90,15 +90,22 @@
 .imageShadow {
   position: absolute;
   width: 700px;
-  top: 300px;
-  left: 100px;
+  
 }
 
 .introImage {
   position: absolute;
-  left: 0;
   z-index: 1;
   height: 700px;
+}
+
+.ImageContainer{
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  overflow: hidden;
+  left: 0;
+  bottom: calc(100px);
 }
 
 .introFooter {
@@ -153,58 +160,57 @@
   }
 }
 
-@media (max-width: 391px) {
+@media (min-height: 1190px) {
 
-    .introContainer {
-      padding: 0 20px;
-    }   
-  .imageShadow {
-    height: 300px;
-    width: 300px;
-    position: absolute;
-    width: unset;
-     top: 200px; 
-    left: calc(50% - 150px);
-    right: unset;
-  }
+    .ImageContainer{
+   
+      bottom: calc(300px);
+    }  
+  
+}
 
-  .scrollDown {
-    display: none;
-  }
+@media (max-height: 900px) {
 
-  .mail {
-    display: none;
-  }
+  .ImageContainer{
+ 
+   display: none;
+  }  
 
-  .introTextContainer {
-    width: 100%;
-    padding-right: 20px;
-  }
   .introRightSide{
-    top: 66%
-  }
-
-  .introIam{
-    font-size: 28px;
-  }
-  .introName {
-    font-size: 35px;
-  }
-  .introDev {
-    font-size: 25px;
-  }
-
-  .introFooter{
-    bottom: 10px;
-    right: 20px;
-    left: 20px;
+    position: relative;
     justify-content: center;
+    align-items: center;
+    top: 0;
   }
-  .redLine{
-    display: none;
+  .introContainer{
+    justify-content: unset;
+  }
+
+}
+
+@media (max-height: 490px) {
+
+  .introRightSide{
+    flex-direction: row;
+    gap: 20px;
   }
   
-  .roundedBackground{
-    display: none;
+
+
+}
+
+@media (max-height: 390px) {
+
+  
+  
+  .introIam {
+    font-size: 38px;
   }
+  .introName {
+    font-size: 60px;
+  }
+  .introDev {
+    font-size: 39px;
+  }
+
 }

@@ -1,359 +1,403 @@
 .background {
-    background-color: #141d2f;
-    height: 100vh;
-    width: 100vw;
-    max-width: 100%;
-    position: relative;
-    color: #fff;
-    z-index: 3;
+  background-color: #141d2f;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  position: relative;
+  color: #fff;
+  z-index: 3;
   overflow: hidden;
-  }
-  
-  .content {
-    margin-top: 110px;
-    padding: 0 100px;
-    position: relative;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-  }
+}
 
-  .imgShadow{
-    position: absolute;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
+.content {
+  margin-top: 110px;
+  padding: 0 100px;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
 
-  .ImageContainer{
-    position: absolute;
-    z-index: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 30vh
+.imgShadow {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
-  }
+.ImageContainer {
+  position: absolute;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 30vh
+}
 
-  .imgHero{
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
+.imgHero {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
-  .flatRoundedBackground{
-    position: absolute;
-    width: 100vw;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: calc(100vh - 50%);
-    z-index: 1;
-    object-fit: cover;
-  }
-  .introRightSide {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 10vh;
-    z-index: 2;
-  }
+.flatRoundedBackground {
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: calc(100vh - 50%);
+  z-index: 1;
+  object-fit: cover;
+}
 
-  .introTextContainer {
-    display: flex;
-    box-sizing: border-box;
-    padding-right: 50px;
-  }
+.introRightSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10vh;
+  z-index: 2;
+}
 
-  .contactBtn {
-    font-size: 23px;
-    font-weight: 400;
-    padding: 15px 30px;
-    border-radius: 10px;
-    background-color: #fa7902;
-    border: none;
-    color: #fff;
-    transition: all 0.05s ease-in-out;
+.introTextContainer {
+  display: flex;
+  box-sizing: border-box;
+  padding-right: 50px;
+}
+
+.contactBtn {
+  font-size: 23px;
+  font-weight: 400;
+  padding: 15px 30px;
+  border-radius: 10px;
+  background-color: #fa7902;
+  border: none;
+  color: #fff;
+  transition: all 0.05s ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
+  text-wrap: nowrap;
+
+  &:hover {
+    background-color: #ff4747;
+    transform: scale(1.1);
+  }
+}
+
+.introIam {
+  transform: rotate(-90deg) translate(7%, 40%);
+  font-size: 64px;
+  font-weight: 400;
+}
+
+.introNameContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+.introName {
+  font-size: 90px;
+  font-weight: 700;
+}
+
+.introDev {
+  font-size: 63px;
+  font-weight: 400;
+  color: #ff4747 !important;
+  transform: translate(0%, -35%);
+}
+
+.introLinks {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 42px;
+  margin-top: 50px;
+
+  a {
     text-decoration: none;
-    cursor: pointer;
-  
+    color: #fff;
+  }
+
+  img {
     &:hover {
-      background-color: #ff4747;
-      transform: scale(1.1);
+      transform: scale(1.2);
     }
   }
+}
+
+.introTextContainerLS{
+  display: none;
+}
+
+
+@media (max-width: 867px) {
+  .ImageContainer {
+    bottom: 25vh;
+  }
+
   .introIam {
-    transform: rotate(-90deg) translate(7%, 40%);
-    font-size: 64px;
-    font-weight: 400;
+    font-size: 48px;
   }
 
-  .introNameContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0;
-  }
   .introName {
-    font-size: 90px;
-    font-weight: 700;
+    font-size: 70px;
   }
+
   .introDev {
-    font-size: 63px;
-    font-weight: 400;
-    color: #ff4747 !important;
-    transform: translate(0%, -35%);
+    font-size: 49px;
   }
 
-  .introLinks {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    gap: 42px;
-    margin-top: 50px;
-  
-    a {
-      text-decoration: none;
-      color: #fff;
-    }
-  
-    img {
-      &:hover {
-        transform: scale(1.2);
-      }
-    }
+  .flatRoundedBackground {
+    top: calc(100vh - 40%);
   }
-
- 
-  @media (max-width: 867px) {
-    .ImageContainer{
-      bottom: 25vh;
-    }
-    .introIam {
-      font-size: 48px;
-    }
-    .introName {
-      font-size: 70px;
-    }
-    .introDev {
-      font-size: 49px;
-    }
-    .flatRoundedBackground{
-      top: calc(100vh - 40%);
-    }
-  }
+}
 
 
 @media (max-width: 680px) {
-    .ImageContainer{
-      bottom: 30vh;
-    }
-    .introIam {
-      font-size: 38px;
-    }
-    .introName {
-      font-size: 60px;
-    }
-    .introDev {
-      font-size: 39px;
-    }
-    .flatRoundedBackground{
-      top: calc(100vh - 45%);
-    }
-    .introRightSide{
-      bottom: 15vh;
-
-      
-    }
+  .ImageContainer {
+    bottom: 30vh;
   }
 
-  @media (max-width: 580px) {
-    .ImageContainer{
-      bottom: 30vh;
-    }
-    .introIam {
-      font-size: 28px;
-    }
-    .introName {
-      font-size: 41px;
-    }
-    .introDev {
-      font-size: 29px;
-    }
-    .flatRoundedBackground{
-      top: calc(100vh - 37%);
-    }
-    .introRightSide{
-      bottom: 15vh;
-
-      
-    }
+  .introIam {
+    font-size: 38px;
   }
 
-  @media (max-width: 450px) {
-    .ImageContainer{
-      bottom: 40vh;
-    }
-    
-    .flatRoundedBackground{
-      top: calc(100vh - 40%);
-    }
-    .introIam {
-      font-size: 22px;
-    }
-    .introName {
-      font-size: 30px;
-    }
-    .introDev {
-      font-size: 21px;
-    }
-    .contactBtn{
-      font-size: 17px;
-      font-weight: 300;
-    }
-
-    .introLinks{
-      margin-top: 20px;
-
-      img{
-        width: 30px;
-        height: auto;
-      }
-    }
-    .introRightSide{
-      bottom: 19vh;
-    }
+  .introName {
+    font-size: 60px;
   }
 
-  @media (max-width: 300px) {
-    
-    
-   .introTextContainer{
-      padding-right: 20px;
-    }
-      .ImageContainer{
-        bottom: 40vh;
-      }
-      
-      .flatRoundedBackground{
-        top: calc(100vh - 40%);
-   }
-    .introIam {
-      font-size: 15px;
-    }
-    .introName {
-      font-size: 23px;
-    }
-    .introDev {
-      font-size: 16px;
-    }
-    
+  .introDev {
+    font-size: 39px;
+  }
+
+  .flatRoundedBackground {
+    top: calc(100vh - 45%);
+  }
+
+  .introRightSide {
+    bottom: 15vh;
+
+
+  }
+}
+
+@media (max-width: 580px) {
+  .ImageContainer {
+    bottom: 30vh;
+  }
+
+  .introIam {
+    font-size: 28px;
+  }
+
+  .introName {
+    font-size: 41px;
+  }
+
+  .introDev {
+    font-size: 29px;
+  }
+
+  .flatRoundedBackground {
+    top: calc(100vh - 37%);
+  }
+
+  .introRightSide {
+    bottom: 15vh;
+
+
+  }
+
+  .contactBtn {
+    font-size: 17px;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 450px) {
+  .ImageContainer {
+    bottom: 40vh;
+  }
+
+  .flatRoundedBackground {
+    top: calc(100vh - 40%);
+  }
+
+  .introIam {
+    font-size: 22px;
+  }
+
+  .introName {
+    font-size: 30px;
+  }
+
+  .introDev {
+    font-size: 21px;
   }
 
 
-  // @media (max-width: 720px) {
-    
-  //   .flatRoundedBackground{
-  //   }
-  //   .content{
-  //     padding: 0 50px;
-  //   }
+  .introLinks {
+    margin-top: 20px;
 
-  //   .introIam {
-  //     font-size: 35px;
-  //   }
-  //   .introName {
-  //     font-size: 50px;
-  //   }
-  //   .introDev {
-  //     font-size: 35px;
-  //   }
+    img {
+      width: 30px;
+      height: auto;
+    }
+  }
 
-  // }
+  .introRightSide {
+    bottom: 19vh;
+  }
+}
 
-  // @media (max-width: 620px) {
-    
-  //   .flatRoundedBackground{
-  //   }
-  //   .content{
-  //     padding: 0 0px;
-  //   }
+@media (max-width: 300px) {
 
-  //   .introIam {
-  //     font-size: 35px;
-  //   }
-  //   .introName {
-  //     font-size: 50px;
-  //   }
-  //   .introDev {
-  //     font-size: 35px;
-  //   }
 
-  //   .ImageContainer{
-  //     height: 600px;
-  //     width: 600px;
-  //   }
+  .introTextContainer {
+    padding-right: 20px;
+  }
 
-    
-  // }
+  .ImageContainer {
+    bottom: 40vh;
+  }
 
-  // @media (max-width: 520px) {
-    
-  //   .flatRoundedBackground{
-  //   }
-  //   .content{
-  //     padding: 0 0px;
-  //   }
+  .flatRoundedBackground {
+    top: calc(100vh - 40%);
+  }
 
-  //   .introIam {
-  //     font-size: 30px;
-  //   }
-  //   .introName {
-  //     font-size: 40px;
-  //   }
-  //   .introDev {
-  //     font-size: 28px;
-  //   }
+  .introIam {
+    font-size: 15px;
+  }
 
-  //   .ImageContainer{
-  //     height: 500px;
-  //     width: 500px;
-  //   }
+  .introName {
+    font-size: 23px;
+  }
 
-   
-  // }
+  .introDev {
+    font-size: 16px;
+  }
 
-  // @media (max-width: 420px) {
-    
-  //   .flatRoundedBackground{
-  //   }
-  //   .content{
-  //     padding: 0 0px;
-  //   }
+}
 
-  //   .introIam {
-  //     font-size: 19px;
-  //   }
-  //   .introName {
-  //     font-size: 26px;
-  //   }
-  //   .introDev {
-  //     font-size: 18px;
-  //   }
 
-  //   .ImageContainer{
-  //     height: 500px;
-  //     width: 500px;
-  //   }
+@media (max-height: 1070px) and (orientation: landscape) {
+  .ImageContainer {
+    bottom: 5vh;
+  }
 
-  //   .contactBtn{
-  //     margin-top: 20px;
-  //   }
-  // }
+  .flatRoundedBackground {
+    top: calc(100vh - 41%);
+  }
+
+  .introRightSide {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 20vh;
+    width: 80%;
+  }
+
+  .introIam {
+    font-size: 22px;
+  }
+
+  .introName {
+    font-size: 30px;
+  }
+
+  .introDev {
+    font-size: 21px;
+  }
+
+  .introLinks {
+    margin-top: 0px;
+    margin-left: 50px;
+
+  }
+}
+
+@media (max-width: 900px) and (max-height: 780px) and (orientation: landscape) {
+  .introLinks {
+    flex-direction: column;
+    gap: 10px;
+
+    img {
+      width: 30px;
+      height: auto;
+    }
+  }
+
+  .ImageContainer {
+    img{
+      bottom: 10vh;
+    height: 500px;
+    width: auto;
+    }
+  }
+
+  .contactBtn {
+    font-size: 17px;
+    font-weight: 300;
+  }
+
+}
+
+
+@media (max-height: 530px) and (orientation: landscape) {
+
+  .ImageContainer{
+    right: 0;
+    bottom: 12vh;
+
+    img{
+      height: 300px;
+      width: auto;
+    }
+  }
+
+  .introIam {
+    font-size: 22px;
+  }
+
+  .introName {
+    font-size: 30px;
+  }
+
+  .introDev {
+    font-size: 21px;
+  }
+  .introTextContainer{
+    display: none;
+  }
+
+  .introTextContainerLS{
+    display: flex;
+    position: absolute;
+    left: 100px;
+    top: 10%;
+  }
+
+  .introLinks{
+    flex-direction: row;
+  }
+
+  .introRightSide{
+    bottom: 30vh;
+    width: 100%;
+    justify-content: space-around;
+
+    a{
+      padding: 10px 20px;
+    }
+  }
+}
