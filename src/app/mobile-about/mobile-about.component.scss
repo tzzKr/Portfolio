@@ -47,3 +47,29 @@
           box-sizing: border-box;
       }
   }
+
+  @media (max-width: 460px) {
+    .content{
+      padding: 0px 50px;
+      box-sizing: border-box;
+    }
+    .textContainer{
+
+      span{
+        font-size: 60px;
+      }
+    }
+  }
+
+  @media (max-width: 400px) {
+    .content{
+      padding: 0px 20px;
+      box-sizing: border-box;
+    }
+    .textContainer{
+
+      span{
+        font-size: 40px;
+      }
+    }
+  }

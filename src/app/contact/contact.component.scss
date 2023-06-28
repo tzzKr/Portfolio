@@ -27,6 +27,8 @@
 .contactContainer {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  z-index: 2;
 
   p {
     font-size: 16px;
@@ -56,7 +58,7 @@
     border-radius: 10px;
     border: none;
     color: #fff;
-    width: 250px;
+   
     background-color: #fa7902;
     cursor: pointer;
 
@@ -70,7 +72,7 @@
     width: 617px;
     height: 50px;
     border-radius: 10px;
-    background-color: #141d2f;
+    background-color: #141d2f00;
     border: 1px solid #ff4747;
     color: #fff;
     box-sizing: border-box;
@@ -92,7 +94,7 @@
     height: 150px;
     min-height: 150px;
     border-radius: 10px;
-    background-color: #141d2f;
+    background-color: #141d2f00;
     border: 1px solid #ff4747;
     color: #fff;
     box-sizing: border-box;
@@ -305,4 +307,36 @@
   .content{
     height: 100vh;
   }
+}
+
+
+@media (max-width: 540px) {
+  .content{
+    padding: 0 20px;
+
+    span{
+      font-size: 60px;
+    }
+  }
+
+  .contactText{
+    max-width: 473px;
+    width: 100%;
+  }
+
+  .input{
+    width: 100% !important;
+  }
+  textarea{
+    width: 100% !important;
+  }
+  .inputContainer{
+    max-width: 473px !important;
+    
+    button{
+      font-size: 18px;
+    font-weight: 300;
+    }
+  }
+
 }

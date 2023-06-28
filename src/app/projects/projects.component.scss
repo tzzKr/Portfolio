@@ -1,38 +1,39 @@
 .background {
-    background-color: #141d2f;
-    height: fit-content;
-    width: 100vw;
-    max-width: 100%;
-    position: relative;
-    color: #fff;
-    overflow: hidden;
-  }
+  background-color: #141d2f;
+  height: fit-content;
+  width: 100vw;
+  max-width: 100%;
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+}
 
-  .content {
-    max-width: 1920px;
-    width: 100vw;
-    margin: 0 auto;
-    padding: 0 100px;
-    position: relative;
-    box-sizing: border-box;
+.content {
+  max-width: 1920px;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 0 100px;
+  position: relative;
+  box-sizing: border-box;
   z-index: 2;
-    height: 100%;
+  height: 100%;
+}
+
+.projectsBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  span {
+    font-size: 32px;
+    font-weight: 700;
+    color: #FF4747 !important;
+
   }
 
-  .projectsBox{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    
-    span{
-      font-size: 32px;
-      font-weight: 700;
-      color: #FF4747 !important;
-      
-    }
-    a{
-      font-size: 23px;
+  a {
+    font-size: 23px;
     font-weight: 400;
     padding: 15px 30px;
     border-radius: 10px;
@@ -42,70 +43,128 @@
     transition: all 0.05s ease-in-out;
     text-decoration: none;
 
-   
+
+  }
+}
+
+.technologies {
+  font-size: 23px;
+  font-weight: 400;
+  color: #FA7902 !important;
+}
+
+.lifeBtn {
+
+  background-color: #FF4747;
+
+  &:hover {
+    background-color: #FA7902;
+  }
+}
+
+.gitBtn {
+  background-color: #141d2f00;
+  border: 1px solid #FA7902 !important;
+
+  &:hover {
+    background-color: #FA7902;
+  }
+}
+
+.description {
+  width: 510px;
+}
+
+.btns {
+  display: flex;
+  gap: 90px;
+}
+
+.shadowBg {
+  position: absolute;
+  top: 40%;
+  transform: translate(-90px, 0);
+  left: 0;
+}
+
+.shadowBg2 {
+  position: absolute;
+  top: 60%;
+  transform: translate(60%, 0) rotate(90deg);
+  right: 0;
+}
+
+@media (max-width: 1185px) {
+  .projectsBox {
+    flex-direction: column !important;
+    align-items: flex-start;
+    gap: 20px;
+    align-items: center;
+    text-align: center !important;
+    margin-bottom: 100px;
+
+    a {
+      font-size: 18px;
     }
   }
 
-  .technologies{
-    font-size: 23px;
-    font-weight: 400;
-    color: #FA7902 !important;
+  .description {
+    margin-top: -100px;
+
   }
 
-  .lifeBtn{
-   
-    background-color: #FF4747;
-   
-    &:hover{
-      background-color: #FA7902 ;
+
+  .btns {
+    justify-content: center !important;
+    ;
   }
+}
+
+@media (max-width: 550px) {
+  .content {
+    padding: 0 20px;
   }
 
-  .gitBtn{
-    background-color: #141d2f;
-    border: 1px solid #FA7902 !important;
+  .projectsBox {
 
-    &:hover{
-      background-color: #FA7902 ;
-  }
-  }
-  .description{
-    width: 510px;
-  }
-
-  .btns{
-    display: flex;
-    gap: 90px;
-  }
-  .shadowBg{
-    position: absolute;
-    top: 40%;
-    transform: translate(-90px, 0);
-    left: 0;
-  }
-
-  .shadowBg2{
-    position: absolute;
-    top: 60%;
-    transform: translate(60%, 0) rotate(90deg);
-    right: 0;
-  }
-
-  @media (max-width: 1185px) {
-    .projectsBox{
-      flex-direction: column !important;
-      align-items: flex-start;
-      gap: 20px;
-      align-items: center;
-      text-align: center !important;
-     
-      a{
-        font-size: 18px;
-      }
+    img {
+      height: auto;
+      width: 400px;
     }
-    .btns{
-      justify-content: center !important;; 
+
+    a {
+
+      font-size: 17px;
+      font-weight: 300;
+
     }
   }
-    
-  
+
+  .description {
+    width: 100%;
+    margin-top: -100px;
+    margin-bottom: 50px;
+  }
+
+  .btns {
+
+    gap: 20px;
+
+    a {
+      width: 80px;
+      text-wrap: nowrap;
+    }
+  }
+
+}
+
+@media (max-width: 550px) {
+  .projectsBox {
+    img {
+      width: 300px;
+    }
+  }
+  .description {
+    margin-top: -80px;
+  }
+}

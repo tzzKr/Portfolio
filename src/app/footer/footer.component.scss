@@ -53,3 +53,23 @@
 .copyright{
   font-size: 23px;
 }
+
+@media (max-width: 750px) {
+  .content{
+    flex-direction: column;
+    padding: 30px 0px;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 250px) {
+  .copyright{
+    font-size: 15px;
+  }
+  .socials{
+    gap: 20px;
+    img{
+      height: 35px;
+      width: auto;
+    }
+  }
+}

@@ -60,4 +60,18 @@
     background-color: #FF4747;
   }
 
-  
+  @media (max-width: 450px) {
+    .titlePortfolio{
+        span{
+            font-size: 60px;
+        }
+    }
+  }
+
+  @media (max-width: 300px) {
+    .titlePortfolio{
+      span{
+          font-size: 40px;
+      }
+  }
+}
