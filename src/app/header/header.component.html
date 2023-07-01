@@ -1,10 +1,20 @@
-
 <div class="header">
     <img src="./assets/img/logo.png" alt="">
     <div class="linkContainer">
-        <a href="#about">About me</a>
-        <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
+        <a [href]="about">About me</a>
+        <a [href]="skills">Skills</a>
+        <a [href]="portfolio">Portfolio</a>
     </div>
-    
+    <div (click)="toggleMenu()" [ngClass]="{'burger': true, 'active': isActive}">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+<div class="MobileMenu" *ngIf="isActive" @slideIn>
+        <a (click)="toggleMenu()" href="#aboutMobile">About me</a>
+        <a (click)="toggleMenu()" href="#skillsMobile">Skills</a>
+        <a (click)="toggleMenu()" href="#portfolioMobile">Portfolio</a>
+        <a (click)="toggleMenu()" href="#contactMobile">Contact</a>
 </div>

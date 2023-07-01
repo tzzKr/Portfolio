@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,7 +16,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ImprintComponent } from './imprint/imprint.component';
 import { PortfolioMasterComponent } from './portfolio-master/portfolio-master.component';
 import { MobileIntroComponent } from './mobile-intro/mobile-intro.component';
-import { MobileAboutComponent } from './mobile-about/mobile-about.component';
 import { MobileSkillsComponent } from './mobile-skills/mobile-skills.component';
 
 @NgModule({
@@ -32,7 +32,6 @@ import { MobileSkillsComponent } from './mobile-skills/mobile-skills.component';
     ImprintComponent,
     PortfolioMasterComponent,
     MobileIntroComponent,
-    MobileAboutComponent,
     MobileSkillsComponent
     
   ],
@@ -41,7 +40,7 @@ import { MobileSkillsComponent } from './mobile-skills/mobile-skills.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-  
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

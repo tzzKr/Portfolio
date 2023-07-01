@@ -48,7 +48,7 @@ name: any;
     fd.append('email', emailField.value);
     fd.append('message', messageField.value);
     await fetch(
-      'https://gerhard-baliet.developerakademie.net/send_mail/send_mail.php',
+      'https://gerhardbaliet.de/send_mail/send_mail.php',
       {
         method: 'POST',
         body: fd,
@@ -64,6 +64,9 @@ name: any;
       this.showMailSuccess = false;
       this.showMail = false;
       console.log(this.showMail);
+      this.fieldStatus.name.success = false;
+      this.fieldStatus.email.success = false;
+      this.fieldStatus.message.success = false;
     }, 500);
 
     //text anzeigen erfolgreich gesendet

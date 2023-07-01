@@ -1,6 +1,6 @@
 .background {
   background-color: #141d2f;
-  height: 900px;
+  height: 100vh;
   width: 100vw;
   max-width: 100%;
   position: relative;
@@ -291,7 +291,7 @@
     justify-content: space-evenly; 
   }
   .background{
-    height: 100vh;
+    height: 120vh;
   }
 
   .parentInputContainer{
@@ -319,6 +319,20 @@
     }
   }
 
+  .scrollUp {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+  
+    
+  }
+
+  .parentInputContainer{
+    width: 100%;
+    justify-content: center;
+  }
+
   .contactText{
     max-width: 473px;
     width: 100%;
@@ -331,12 +345,17 @@
     width: 100% !important;
   }
   .inputContainer{
-    max-width: 473px !important;
+    width: 90% !important;
     
     button{
       font-size: 18px;
     font-weight: 300;
     }
+  }
+
+  .mainPhrase {
+    font-weight: 700;
+    font-size: 23px !important;
   }
 
 }

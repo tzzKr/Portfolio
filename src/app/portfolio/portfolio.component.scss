@@ -1,6 +1,6 @@
 .background {
     background-color: #141d2f;
-    height: 300px;
+    height: fit-content;
     width: 100vw;
     max-width: 100%;
     position: relative;
@@ -61,6 +61,10 @@
   }
 
   @media (max-width: 450px) {
+    .content{
+      padding: 0px 50px;
+      box-sizing: border-box;
+    }
     .titlePortfolio{
         span{
             font-size: 60px;

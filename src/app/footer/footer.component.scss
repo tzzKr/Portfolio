@@ -55,13 +55,14 @@
 }
 
 @media (max-width: 750px) {
+  .background{
+    height: 200px;
+  }
   .content{
     flex-direction: column;
     padding: 30px 0px;
     box-sizing: border-box;
   }
-}
-@media (max-width: 250px) {
   .copyright{
     font-size: 15px;
   }

@@ -89,7 +89,6 @@ a {
   }
 }
 .parentIconContainer{
-  display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -117,6 +116,7 @@ a {
   .skillIconContainer{
     width: 100%;
     gap: 40px;
+    display: flex;
 
     img{
       width: auto;
@@ -152,7 +152,6 @@ a {
     font-weight: 300;
   }
   .parentIconContainer{
-    overflow: scroll;
     width: 90%;
     height: 50%;
     align-items: flex-start;
@@ -160,6 +159,7 @@ a {
   }
   .skillIconContainer{
     gap: 10px;
+    justify-content: center;
   }
 }
 
