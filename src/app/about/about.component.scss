@@ -1,3 +1,18 @@
+$normalFont: 16px;
+$mobileFontTitle: 45px;
+$fontTitle: 90px;
+
+@mixin fontTitle {
+  font-size: $fontTitle;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  @media (max-width: 550px) {
+    font-size: $mobileFontTitle;
+  }
+}
+
+
 .background {
   background-color: #141d2f;
   height: 100vh;
@@ -22,8 +37,7 @@ position: relative;
   
 
   span {
-    font-size: 90px;
-    font-weight: 700;
+    @include fontTitle;
   }
   p {
     font-size: 16px;
@@ -109,18 +123,15 @@ position: relative;
   justify-content: center;
   align-items: center;
 }
-.textContainer {
 
-  span {
-    font-size: 70px;
-    font-weight: 700;
-  }
+
+ 
 }
 .background{
   padding-top: 60px;
   padding-bottom: 60px;
 }
-}
+
 
 
 @media (max-width: 1260px) {
@@ -141,9 +152,7 @@ position: relative;
   .textContainer {
     max-width: 100%;
 
-    span {
-      font-size: 45px;
-    }
+    
   }
   .background{
     padding-top: 60px;
