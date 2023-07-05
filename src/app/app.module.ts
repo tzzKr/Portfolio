@@ -18,6 +18,7 @@ import { PortfolioMasterComponent } from './portfolio-master/portfolio-master.co
 import { MobileIntroComponent } from './mobile-intro/mobile-intro.component';
 import { MobileSkillsComponent } from './mobile-skills/mobile-skills.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

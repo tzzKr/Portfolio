@@ -1,6 +1,6 @@
 <div class="background">
     <div class="content">
-        <div class="projectsBox" [style]="project.side" *ngFor="let project of projekts">
+        <div class="projectsBox" [@fadeInOut]  [style]="project.side" *ngFor="let project of projekts">
             <img [src]="project.image" alt="">
             <div class="description">
                 <span>{{project.name}}</span>
