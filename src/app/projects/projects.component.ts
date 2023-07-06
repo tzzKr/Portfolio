@@ -1,17 +1,22 @@
-import { Component, HostListener } from '@angular/core';
-import { trigger, state, style, animate, transition } from '@angular/animations';
-
+import { Component, OnInit } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
-  
+
 })
-export class ProjectsComponent {
+export class ProjectsComponent implements OnInit {
+  
+  
+  ngOnInit(): void {
+    AOS.init();
+  }
 
 
-  projekts=[
+
+  projekts = [
     {
       name: 'El Pollo Loco',
       description: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
@@ -55,13 +60,6 @@ export class ProjectsComponent {
       sidebtn: 'justify-content: flex-end;'
 
     },
-
-
-
   ]
-
-  
-
-
 
 }
