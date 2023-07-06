@@ -6,17 +6,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
-  animations: [
-    trigger('fadeInOut', [
-      state('in', style({opacity: 1})),
-      transition(':enter', [
-        style({opacity: 0}),
-        animate(600 )
-      ]),
-      transition(':leave',
-        animate(600, style({opacity: 0})))
-    ])
-  ]
+  
 })
 export class ProjectsComponent {
 
@@ -70,25 +60,8 @@ export class ProjectsComponent {
 
   ]
 
-  isElementInViewPort(element: HTMLElement) {
-    const rect = element.getBoundingClientRect();
-  
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  }
   
 
-  @HostListener('window:scroll', ['$event'])
-onWindowScroll(event: any) {
-  const element = document.getElementById('my-element');
-  
-  if (this.isElementInViewPort(element)) {
-    element.classList.add('fadeInUp');
-  }
-}
+
 
 }
