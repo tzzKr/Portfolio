@@ -37,7 +37,7 @@ export class HeaderComponent {
   onResize(event: { target: any; }) {
     this.about = event.target.innerWidth < 1300 ? '#aboutMobile' : '#about';
     this.skills = event.target.innerWidth < 1300 ? '#skillsMobile' : '#skills';
-    this.portfolio = event.target.innerWidth < 1300 ? '#portfolioMobile' : '#about';
+    this.portfolio = event.target.innerWidth < 1300 ? '#portfolioMobile' : '#portfolio';
   }
 
   ngOnInit() {

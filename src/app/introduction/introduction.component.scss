@@ -162,11 +162,13 @@
   }
 }
 
+
+
 @media (min-width: 2050px) {
 
   .ImageContainer{
  
-    bottom: calc(150px) !important;
+    bottom: calc(150px);
   }  
 
 }
@@ -175,9 +177,17 @@
 
     .ImageContainer{
    
-      bottom: calc(300px);
+      bottom: 200px;
     }  
   
+}
+
+@media (min-height: 900px) and (min-width: 1910px){
+
+  .ImageContainer{
+ 
+   bottom: 0;
+  }  
 }
 
 @media (max-height: 900px) {

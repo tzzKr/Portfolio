@@ -1,0 +1,9 @@
+RewriteEngine On
+# Wenn eine existierende Datei oder ein existierendes Verzeichnis nicht gefunden wird
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
+# dann überspringen Sie die RewriteRule
+RewriteRule ^ - [L]
+
+# Ansonsten leiten Sie alle Anfragen an die index.html um
+RewriteRule ^ ./index.html [L]
