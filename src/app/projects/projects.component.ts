@@ -50,7 +50,7 @@ export class ProjectsComponent implements OnInit {
 
     },
     {
-      name: 'Ring Of Fire',
+      name: 'PlaceHolder',
       description: 'Engage in a fun multiplayer drinking game with a deck of cards, powered by Google Firebase. Play with friends and enjoy',
       image: './assets/img/MockUps/Ringoffire.png',
       url: 'https://ring-of-fire-dbe91.web.app/',
