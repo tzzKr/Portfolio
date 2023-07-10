@@ -9,7 +9,7 @@ export class ContactComponent {
   showMailLoader = false;
   showMailSuccess = false;
   showMail = false;
- 
+  showMailConfimation = false;
 
   fieldStatus = {
     name: { warning: false, success: false },
@@ -64,11 +64,11 @@ name: any;
       this.fieldStatus.name.success = false;
       this.fieldStatus.email.success = false;
       this.fieldStatus.message.success = false;
-    }, 500);
-    setTimeout(() => {
       this.showMailSuccess = false;
       this.showMail = false;
-    }, 5000);
+      this.showMailConfimation = true;
+    }, 500);
+    
 
     //text anzeigen erfolgreich gesendet
 

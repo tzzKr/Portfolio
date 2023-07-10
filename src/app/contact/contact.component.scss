@@ -178,6 +178,10 @@ $fontTitle: 90px;
   }
 }
 
+.app-email-sent{
+
+}
+
 .mailLoader {
   position: absolute;
   width: 100%;
@@ -254,31 +258,55 @@ $fontTitle: 90px;
   0% {
     opacity: 0;
     transform: scale(1);
+
   }
+  
   50% {
     opacity: 1;
-    transform: translate(0px, 0px) scale(1);
-  }
-  60% {
-    opacity: 1;
-    transform: translate(-212px, 147px) scale(0.8);
-    
-  }
-  90% {
-    opacity: 1;
+    transform: scale(1.1);
     
     
   }
   100% {
     opacity: 0;
-    transform: translate(-212px, 147px) scale(0.8);
+    transform: scale(1);
 
   }
 }
 
 .app-email-sent {
   &.show {
-    animation: emailSent 5s linear;
+    animation: emailSent 0.5s linear;
+  }
+}
+
+@keyframes emailConfirmation {
+  0% {
+    opacity: 0;
+    transform: translate(-25px, -40px) scale(0.9);
+
+  }
+  
+  50% {
+    opacity: 1;
+    transform: translate(-25px, -40px) scale(1);
+
+    
+    
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-25px, -40px) scale(0.9);
+
+
+  }
+}
+
+.email-sent-confirmation{
+  transform: translate(-25px, -40px) scale(0.9);
+
+  &.show{
+    animation: emailConfirmation 0.5s linear;
   }
 }
 

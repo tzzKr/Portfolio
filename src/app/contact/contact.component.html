@@ -12,12 +12,8 @@
       </div>
       <div class="parentInputContainer" style="position: relative">
         <div *ngIf="showMail" class="mailLoader">
-          <div
-            class="app-email-sent"
-            *ngIf="showMailSuccess"
-            [class.show]="showMailSuccess"
-          >
-            Ihre E-Mail wurde gesendet!
+          <div class="app-email-sent" *ngIf="showMailSuccess" [class.show]="showMailSuccess">
+            Your email has been sent!
           </div>
           <div *ngIf="showMailLoader" class="lds-ellipsis">
             <div></div>
@@ -26,85 +22,34 @@
             <div></div>
           </div>
         </div>
-        <form
-          class="inputContainer"
-          ngNativeValidate
-          (submit)="sendMail()"
-          #myForm
-        >
-          <input
-          [style.borderColor]="fieldStatus.name.success ? '#70E61C' : ''"
-            (click)="checkInputStatus('name')"
-            (keyup)="checkInputStatus('name')"
-            required
-            class="input"
-            placeholder="Your name"
-            type="text"
-            name="message"
-            #nameField
-          />
+        <form class="inputContainer" ngNativeValidate (submit)="sendMail()" #myForm>
+          <input [style.borderColor]="fieldStatus.name.success ? '#70E61C' : ''" (click)="checkInputStatus('name')"
+            (keyup)="checkInputStatus('name')" required class="input" placeholder="Your name" type="text" name="message"
+            #nameField />
           <div class="inputStatus">
-            <img
-              *ngIf="fieldStatus.name.success"
-              src="./assets/img/greenSuccess.svg"
-              alt=""
-            />
-            <img
-              *ngIf="fieldStatus.name.warning"
-              src="./assets/img/redWarning.svg"
-              alt=""
-            />
+            <img *ngIf="fieldStatus.name.success" src="./assets/img/greenSuccess.svg" alt="" />
+            <img *ngIf="fieldStatus.name.warning" src="./assets/img/redWarning.svg" alt="" />
           </div>
           <p *ngIf="fieldStatus.name.warning" class="required">
             Your name is required
           </p>
-          <input
-          [style.borderColor]="fieldStatus.email.success ? '#70E61C' : ''"
-            (click)="checkInputStatus('email')"
-            (keyup)="checkInputStatus('email')"
-            required
-            class="input"
-            placeholder="Your email"
-            type="email"
-            name="email"
-            #emailField
-          />
+          <input [style.borderColor]="fieldStatus.email.success ? '#70E61C' : ''" (click)="checkInputStatus('email')"
+            (keyup)="checkInputStatus('email')" required class="input" placeholder="Your email" type="email"
+            name="email" #emailField />
           <div class="inputStatus" style="top: 137px">
-            <img
-              *ngIf="fieldStatus.email.success"
-              src="./assets/img/greenSuccess.svg"
-              alt=""
-            /><img src="" alt="" />
-            <img
-              *ngIf="fieldStatus.email.warning"
-              src="./assets/img/redWarning.svg"
-              alt=""
-            />
+            <img *ngIf="fieldStatus.email.success" src="./assets/img/greenSuccess.svg" alt="" /><img src="" alt="" />
+            <img *ngIf="fieldStatus.email.warning" src="./assets/img/redWarning.svg" alt="" />
           </div>
           <p *ngIf="fieldStatus.email.warning" class="required" style="top: 170px">
             Your email is required
           </p>
 
-          <textarea
-          [style.borderColor]="fieldStatus.message.success ? '#70E61C' : ''"
-            (click)="checkInputStatus('message')"
-            (keyup)="checkInputStatus('message')"
-            required
-            placeholder="Your message"
-            name="message"
-            #messageField
-          ></textarea>
+          <textarea [style.borderColor]="fieldStatus.message.success ? '#70E61C' : ''"
+            (click)="checkInputStatus('message')" (keyup)="checkInputStatus('message')" required
+            placeholder="Your message" name="message" #messageField></textarea>
           <div class="inputStatus" style="top: 224px">
-            <img
-              *ngIf="fieldStatus.message.success"
-              src="./assets/img/greenSuccess.svg"
-              alt=""
-            /><img src="" alt="" />
-            <img
-              *ngIf="this.fieldStatus.message.warning"
-              src="./assets/img/redWarning.svg"
-              alt=""
-            />
+            <img *ngIf="fieldStatus.message.success" src="./assets/img/greenSuccess.svg" alt="" /><img src="" alt="" />
+            <img *ngIf="this.fieldStatus.message.warning" src="./assets/img/redWarning.svg" alt="" />
           </div>
           <p *ngIf="fieldStatus.message.warning" class="required" style="top: 355px">
             Your message is required
@@ -112,10 +57,14 @@
 
           <button type="submit" #sendBtn>Send message</button>
         </form>
+
+        <div class="email-sent-confirmation" *ngIf="showMailConfimation" [class.show]="showMailConfimation">
+          Your email has been sent!
+        </div>
       </div>
     </div>
   </div>
- <img class="shadowBg" src="./assets/img/shadows/shadow9.png" alt="">
+  <img class="shadowBg" src="./assets/img/shadows/shadow9.png" alt="">
   <div class="redLine"></div>
   <a href="#header"><img class="scrollUp" src="./assets/img/GoUpButton.svg" alt="" /></a>
 </div>
