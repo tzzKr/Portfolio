@@ -114,3 +114,20 @@
     }
 }
 
+@media screen and (max-height: 550px) and (orientation: landscape) {
+    .header{
+        padding: 0 20px;
+
+        img{
+            max-width: 50px;
+            max-height: 50px;
+        }
+        a{
+          font-size: 1.2rem;
+  
+         
+      }
+    }
+
+    
+}

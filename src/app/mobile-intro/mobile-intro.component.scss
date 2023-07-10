@@ -6,7 +6,6 @@
   position: relative;
   color: #fff;
   z-index: 3;
-  overflow: hidden;
 }
 
 .content {
@@ -46,7 +45,7 @@
 
 .flatRoundedBackground {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -158,11 +157,37 @@
   }
 
   .flatRoundedBackground {
-    top: calc(100vh - 40%);
+    top: calc(100vh - 55%);
   }
 }
 
+@media (max-height: 790px) and (orientation: landscape) {
 
+  .ImageContainer{
+    width: 600px;
+   bottom: 0;
+  }  
+}
+
+@media (max-height: 650px) and (orientation: landscape) {
+
+  .ImageContainer{
+    width: 480px;
+   bottom: 0;
+  }  
+}
+
+@media (min-height: 770px) and (orientation: portrait) {
+
+  .introLinks{
+    margin-top: 32px;
+  }
+
+  .introRightSide{
+    bottom: calc(10vh + 15px);
+  }
+    
+}
 @media (max-width: 690px) {
   .ImageContainer {
     bottom: 30vh;
@@ -181,7 +206,7 @@
   }
 
   .flatRoundedBackground {
-    top: calc(100vh - 45%);
+    top: calc(100vh - 55%);
   }
 
   .introRightSide {
@@ -209,7 +234,7 @@
   }
 
   .flatRoundedBackground {
-    top: calc(100vh - 37%);
+    top: calc(100vh - 47%);
   }
 
   .introRightSide {
@@ -230,7 +255,7 @@
   }
 
   .flatRoundedBackground {
-    top: calc(100vh - 40%);
+    top: calc(100vh - 55%);
   }
 
   .introIam {
@@ -272,7 +297,7 @@
   }
 
   .flatRoundedBackground {
-    top: calc(100vh - 40%);
+    top: calc(100vh - 45%);
   }
 
   .introIam {
@@ -296,7 +321,7 @@
   }
 
   .flatRoundedBackground {
-    top: calc(100vh - 41%);
+    top: calc(100vh - 61%);
   }
 
   .introRightSide {
@@ -353,11 +378,11 @@
 }
 
 
-@media (max-height: 530px) and (orientation: landscape) {
+@media (max-height: 550px) and (orientation: landscape) {
 
   .ImageContainer{
     right: 0;
-    bottom: 12vh;
+    bottom: 20vh;
 
     img{
       height: 300px;
@@ -389,6 +414,12 @@
 
   .introLinks{
     flex-direction: row;
+    gap: 10px;
+
+    img{
+      width: 30px;
+      height: auto;
+    }
   }
 
   .introRightSide{
@@ -398,6 +429,12 @@
 
     a{
       padding: 10px 20px;
+      font-size: 1rem;
     }
+  }
+
+  .flatRoundedBackground{
+    top: calc(130px);
+
   }
 }

@@ -257,17 +257,28 @@ $fontTitle: 90px;
   }
   50% {
     opacity: 1;
-    transform: scale(1.1);
+    transform: translate(0px, 0px) scale(1);
+  }
+  60% {
+    opacity: 1;
+    transform: translate(-212px, 147px) scale(0.8);
+    
+  }
+  90% {
+    opacity: 1;
+    
+    
   }
   100% {
     opacity: 0;
-    transform: scale(1);
+    transform: translate(-212px, 147px) scale(0.8);
+
   }
 }
 
 .app-email-sent {
   &.show {
-    animation: emailSent 0.5s linear;
+    animation: emailSent 5s linear;
   }
 }
 
@@ -381,4 +392,20 @@ $fontTitle: 90px;
     font-size: 23px !important;
   }
 
+}
+
+@media screen and (max-height: 550px) and (orientation: landscape) {
+  .content{
+    span{
+      font-size: $mobileFontTitle;
+    }
+  }
+  .redLine{
+    top: 25px;
+    width: 30px;
+  }
+
+  .background{
+    height: 220vh;
+  };
 }

@@ -96,3 +96,16 @@ $fontTitle: 90px;
       }
   }
 }
+
+@media screen and (max-height: 550px) and (orientation: landscape) {
+  .titlePortfolio{
+    span{
+        font-size: $mobileFontTitle;
+    }
+    
+}
+
+.lines{
+  height: 60px;
+}
+}

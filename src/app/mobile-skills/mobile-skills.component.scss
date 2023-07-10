@@ -15,7 +15,7 @@ $fontTitle: 90px;
 
 .background {
   background-color: #141d2f;
-  height: 100vh;
+  height: calc(100vh + 70px);
   width: 100vw;
   max-width: 100%;
   position: relative;
@@ -73,7 +73,6 @@ a {
   color: #fff;
   cursor: pointer;
   width: 200px;
-  margin-top: 50px;
   text-decoration: none;
 
   &:hover {
@@ -89,6 +88,7 @@ a {
     row-gap: 50px;
     column-gap: 70px;
     margin-top: 70px;
+    justify-content: center;
 }
 
 .iconBox{
@@ -185,4 +185,64 @@ a {
     box-sizing: border-box;
   }
   
+}
+
+@media screen and (max-height: 550px) and (orientation: landscape) {
+  .content {
+    flex-direction: row;
+    padding: 0 20px;
+    align-items: first baseline
+
+  }
+  .mySkillsContainer {
+    width: 50%;
+    text-align: left;
+
+    span {
+      font-size: $mobileFontTitle;
+    }
+  }
+  .parentIconContainer {
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+  }
+  .skillIconContainer {
+    gap: 20px;
+    img{
+      width: auto;
+      height: 40px;
+    }
+
+    p{
+      display: none;
+    }
+  }
+
+  .iconBox{
+    width: fit-content;
+    height: auto;
+  }
+  a {
+    position: absolute;
+    bottom: 20%;
+  }
+}
+
+@media screen and (max-height: 750px) and (max-width: 360px) and (orientation: portrait) {
+  .skillIconContainer {
+    gap: 30px;
+    img{
+      width: auto;
+      height: 40px;
+    }
+
+    p{
+      display: none;
+    }
+  }
+  .iconBox{
+    width: fit-content;
+    height: auto;
+  }
 }

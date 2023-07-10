@@ -61,13 +61,14 @@ name: any;
     this.myForm.nativeElement.reset();
 
     setTimeout(() => {
-      this.showMailSuccess = false;
-      this.showMail = false;
-      console.log(this.showMail);
       this.fieldStatus.name.success = false;
       this.fieldStatus.email.success = false;
       this.fieldStatus.message.success = false;
     }, 500);
+    setTimeout(() => {
+      this.showMailSuccess = false;
+      this.showMail = false;
+    }, 5000);
 
     //text anzeigen erfolgreich gesendet
 
@@ -96,7 +97,7 @@ name: any;
         return;
     }
 
-    const isFieldEmpty = fieldElement.nativeElement.value.length === 0;
+    const isFieldEmpty = fieldElement.nativeElement.value.length === 0 || fieldElement.nativeElement.validity.typeMismatch;
     this.fieldStatus[field].warning = isFieldEmpty;
     this.fieldStatus[field].success = !isFieldEmpty;
 

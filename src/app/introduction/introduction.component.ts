@@ -28,17 +28,18 @@ export class IntroductionComponent implements AfterViewInit, OnDestroy {
   }
 
   checkWindowSizeAndAdjust() {
-    var width = window.innerWidth;
-    var height = window.innerHeight;
+    let width = window.innerWidth;
+    let height = window.innerHeight;
     if (width > 1.9 * height) {
       this.renderer.setStyle(this.imgContainer.nativeElement, 'bottom', '0px');
     }
-    if (width > 1.2 * height && width < 1.9*height) {
-      this.renderer.setStyle(this.imgContainer.nativeElement, 'bottom', '33%');
-    }
-    if (width > 1.2 * height && width > 1.3*height) {
+  
+    if (width > height && width < 1.2*height) {
        
+        this.renderer.setStyle(this.imgContainer.nativeElement, 'bottom', "300px");
+      } else{
         this.renderer.removeStyle(this.imgContainer.nativeElement, 'bottom');
-      } 
+
+      }
   }
 }

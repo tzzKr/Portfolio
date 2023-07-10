@@ -174,3 +174,14 @@
     margin-top: -80px;
   }
 }
+
+@media screen and (max-height: 550px) and (orientation: landscape) {
+  .projectsBox {
+    img {
+      width: 300px;
+    }
+  }
+  .description {
+    margin-top: -80px;
+  }
+}

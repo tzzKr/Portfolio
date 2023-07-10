@@ -164,15 +164,27 @@ position: relative;
   }
 }
 
-// @media (max-width: 400px) {
-//   .content{
-//     padding: 0px 20px;
-//     box-sizing: border-box;
-//   }
-//   .textContainer{
+@media screen and (max-height: 550px) and (orientation: landscape) {
 
-//     span{
-//       font-size: 40px;
-//     }
-//   }
-// }
+  .content{
+    z-index: 4;
+    span{
+      font-size: $mobileFontTitle;
+    }
+  }
+  
+  .textContainer{
+    width: 100%;
+    max-width: unset;
+    flex-direction: column;  // Change here to column to align items vertically
+    
+  
+  }
+
+  .shadowBg{
+    z-index: 3;
+  }
+  
+  }
+  
+  
