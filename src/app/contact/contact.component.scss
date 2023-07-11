@@ -283,27 +283,26 @@ $fontTitle: 90px;
 @keyframes emailConfirmation {
   0% {
     opacity: 0;
-    transform: translate(-25px, -40px) scale(0.9);
-
+    transform: translate(0px, 40px) scale(0.9);
   }
   
   50% {
     opacity: 1;
-    transform: translate(-25px, -40px) scale(1);
-
-    
-    
+    transform: translate(0px, 40px) scale(0.9);
   }
   100% {
     opacity: 0;
-    transform: translate(-25px, -40px) scale(0.9);
+    transform: translate(0px, 40px) scale(0.9);
+
 
 
   }
 }
 
 .email-sent-confirmation{
-  transform: translate(-25px, -40px) scale(0.9);
+  transform: translate(0px, 40px) scale(0.9);
+  position: absolute;
+  bottom: 0;
 
   &.show{
     animation: emailConfirmation 0.5s linear;

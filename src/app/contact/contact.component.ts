@@ -68,6 +68,10 @@ name: any;
       this.showMail = false;
       this.showMailConfimation = true;
     }, 500);
+
+    setTimeout(() => {
+      this.showMailConfimation = false;
+    }, 5000);
     
 
     //text anzeigen erfolgreich gesendet

@@ -6,11 +6,11 @@
   position: relative;
   color: #fff;
   z-index: 3;
+  overflow: hidden;
 }
 
 .content {
   margin-top: 110px;
-  padding: 0 100px;
   position: relative;
   box-sizing: border-box;
   display: flex;
@@ -19,55 +19,61 @@
   height: 100%;
 }
 
-.imgShadow {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.ImageContainer {
-  position: absolute;
-  z-index: 0;
+.textandbutton{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  bottom: 30vh
+  justify-content: center;
+  margin-top: 50px;
 }
 
-.imgHero {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.flatRoundedBackground {
+.redLine{
   position: absolute;
-  width: 100%;
-  bottom: 0;
+  bottom: 150px;
+  height: 4px;
+  width: 20%;
   left: 0;
-  right: 0;
-  top: calc(100vh - 50%);
-  z-index: 1;
-  object-fit: cover;
+  background-color: #FF4747;
+}
+
+.shadow1{
+position: absolute;
+height: auto;
+width: 350px;
+
+top: 0;
+left: 0;
+transform: translate(-145px, 0px);
+}
+.shadow2{
+position: absolute;
+height: auto;
+width: 350px;
+
+bottom: 10%;
+right: 0;
+transform: translate(145px, 0px);
+
 }
 
 .introRightSide {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 10vh;
-  z-index: 2;
+    position: relative;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: calc(50% - 180px);
+    z-index: 2;
+    height: calc(100% - 110px);
 }
 
 .introTextContainer {
   display: flex;
   box-sizing: border-box;
   padding-right: 50px;
+  margin-bottom: 70px;
 }
 
 .contactBtn {
@@ -141,7 +147,6 @@
 
 @media (max-width: 880px) {
   .ImageContainer {
-    bottom: 25vh;
   }
 
   .introIam {
@@ -165,7 +170,6 @@
 
   .ImageContainer{
     width: 600px;
-   bottom: 0;
   }  
 }
 
@@ -173,7 +177,6 @@
 
   .ImageContainer{
     width: 480px;
-   bottom: 0;
   }  
 }
 
@@ -184,14 +187,11 @@
   }
 
   .introRightSide{
-    bottom: calc(10vh + 15px);
   }
     
 }
 @media (max-width: 690px) {
-  .ImageContainer {
-    bottom: 30vh;
-  }
+  
 
   .introIam {
     font-size: 38px;
@@ -210,7 +210,6 @@
   }
 
   .introRightSide {
-    bottom: 15vh;
 
 
   }
@@ -218,7 +217,6 @@
 
 @media (max-width: 580px) {
   .ImageContainer {
-    bottom: 30vh;
   }
 
   .introIam {
@@ -238,7 +236,6 @@
   }
 
   .introRightSide {
-    bottom: 15vh;
 
 
   }
@@ -251,7 +248,6 @@
 
 @media (max-width: 450px) {
   .ImageContainer {
-    bottom: 40vh;
   }
 
   .flatRoundedBackground {
@@ -281,7 +277,6 @@
   }
 
   .introRightSide {
-    bottom: 19vh;
   }
 }
 
@@ -293,7 +288,6 @@
   }
 
   .ImageContainer {
-    bottom: 40vh;
   }
 
   .flatRoundedBackground {
@@ -315,41 +309,7 @@
 }
 
 
-@media (max-height: 1070px) and (orientation: landscape) {
-  .ImageContainer {
-    bottom: 5vh;
-  }
 
-  .flatRoundedBackground {
-    top: calc(100vh - 61%);
-  }
-
-  .introRightSide {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    bottom: 20vh;
-    width: 80%;
-  }
-
-  .introIam {
-    font-size: 22px;
-  }
-
-  .introName {
-    font-size: 30px;
-  }
-
-  .introDev {
-    font-size: 21px;
-  }
-
-  .introLinks {
-    margin-top: 0px;
-    margin-left: 50px;
-
-  }
-}
 
 @media (max-width: 900px) and (max-height: 780px) and (orientation: landscape) {
   .introLinks {
@@ -362,13 +322,7 @@
     }
   }
 
-  .ImageContainer {
-    img{
-      bottom: 10vh;
-    height: 500px;
-    width: auto;
-    }
-  }
+  
 
   .contactBtn {
     font-size: 17px;
@@ -380,15 +334,8 @@
 
 @media (max-height: 550px) and (orientation: landscape) {
 
-  .ImageContainer{
-    right: 0;
-    bottom: 20vh;
-
-    img{
-      height: 300px;
-      width: auto;
-    }
-  }
+  
+  
 
   .introIam {
     font-size: 22px;
@@ -401,17 +348,9 @@
   .introDev {
     font-size: 21px;
   }
-  .introTextContainer{
-    display: none;
-  }
+  
 
-  .introTextContainerLS{
-    display: flex;
-    position: absolute;
-    left: 100px;
-    top: 10%;
-  }
-
+  
   .introLinks{
     flex-direction: row;
     gap: 10px;
@@ -423,9 +362,7 @@
   }
 
   .introRightSide{
-    bottom: 30vh;
-    width: 100%;
-    justify-content: space-around;
+    
 
     a{
       padding: 10px 20px;
@@ -433,8 +370,5 @@
     }
   }
 
-  .flatRoundedBackground{
-    top: calc(130px);
-
-  }
+   
 }

@@ -1,0 +1,99 @@
+$normalFont: 16px;
+$mobileFontTitle: 45px;
+$fontTitle: 90px;
+
+@mixin fontTitle {
+  font-size: $fontTitle;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  @media (max-width: 550px) {
+    font-size: $mobileFontTitle;
+  }
+}
+
+
+.background {
+  background-color: #141d2f;
+  height: 50vh;
+  width: 100vw;
+  max-width: 100%;
+position: relative;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  bottom: 30vh;
+}
+
+.imgHero {
+  position: relative;
+ z-index: 1;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.imgShadow {
+  position: absolute;
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  width: -webkit-fill-available;
+  max-width: 750px;
+}
+
+.flatRoundedBackground {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 70%;
+  z-index: 1;
+  object-fit: cover;
+}
+
+
+
+@media screen and (max-height: 1050px) and (min-width: 550px) {
+  .flatRoundedBackground {
+    top: 60%;
+  }
+  
+}
+
+@media screen and (max-height: 800px) and (min-width: 550px) {
+  .flatRoundedBackground {
+    top: 50%;
+  }
+  
+}
+
+@media screen and (max-height: 630px) and (min-width: 550px) {
+  .flatRoundedBackground {
+    top: 40%;
+  }
+  
+}
+
+@media screen and (max-height: 500px) and (min-width: 550px) {
+  .flatRoundedBackground {
+    top: 20%;
+  }
+  
+}
+
+@media screen and (max-height: 430px) and (min-width: 550px) {
+  .background{
+    display: none;
+  }
+  
+}

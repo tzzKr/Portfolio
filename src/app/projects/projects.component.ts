@@ -49,17 +49,17 @@ export class ProjectsComponent implements OnInit {
       sidebtn: ''
 
     },
-    {
-      name: 'PlaceHolder',
-      description: 'Engage in a fun multiplayer drinking game with a deck of cards, powered by Google Firebase. Play with friends and enjoy',
-      image: './assets/img/MockUps/Ringoffire.png',
-      url: 'https://ring-of-fire-dbe91.web.app/',
-      github: 'https://github.com/tzzKr/RingOfFire',
-      technologies: ['HTML', 'SCSS', 'TypeScript', 'Material Design', 'Angular', 'Firebase'],
-      side: 'flex-direction: row-reverse; text-align: end; ',
-      sidebtn: 'justify-content: flex-end;'
+    // {
+    //   name: 'Wird ersetzt',
+    //   description: 'Engage in a fun multiplayer drinking game with a deck of cards, powered by Google Firebase. Play with friends and enjoy',
+    //   image: './assets/img/MockUps/Ringoffire.png',
+    //   url: '',
+    //   github: 'https://github.com/tzzKr/RingOfFire',
+    //   technologies: ['HTML', 'SCSS', 'TypeScript', 'Material Design', 'Angular', 'Firebase'],
+    //   side: 'flex-direction: row-reverse; text-align: end; ',
+    //   sidebtn: 'justify-content: flex-end;'
 
-    },
+    // },
   ]
 
 }
