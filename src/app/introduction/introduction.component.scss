@@ -37,15 +37,15 @@
 }
 .introIam {
   transform: rotate(-90deg) translate(7%, 40%);
-  font-size: 64px;
+  font-size: clamp(2.8125rem, 0.2623rem + 3.1148vw, 4rem);
   font-weight: 400;
 }
 .introName {
-  font-size: 90px;
+  font-size: clamp(4.0625rem, 0.707rem + 4.0984vw, 5.625rem);
   font-weight: 700;
 }
 .introDev {
-  font-size: 63px;
+  font-size: clamp(2.8125rem, 0.3965rem + 2.9508vw, 3.9375rem);
   font-weight: 400;
   color: #ff4747 !important;
   transform: translate(0%, -35%);
@@ -171,6 +171,20 @@
     bottom: calc(150px);
   }  
 
+}
+
+@media (max-width: 1420px) {
+  .introIam {
+    font-size: 48px;
+  }
+
+  .introName {
+    font-size: 70px;
+  }
+
+  .introDev {
+    font-size: 49px;
+  }
 }
 
 @media (min-height: 1190px) {
