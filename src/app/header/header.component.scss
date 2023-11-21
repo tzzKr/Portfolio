@@ -1,133 +1,134 @@
 .header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 110px;
-    background-color: #141D2F;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 100px;
-    z-index: 1000;
-    max-width: 1920px;
-    margin: 0 auto;
-    box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 110px;
+  background-color: #141D2F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  z-index: 1000;
+  max-width: 1920px;
+  margin: 0 auto;
+  box-sizing: border-box;
 
-    img{
-        
-        width: 100%;
-        max-width: 90px;
-        max-height: 90px;
-        height: 100%;
-        object-fit: cover;
+  img {
+
+    width: 100%;
+    max-width: 90px;
+    max-height: 90px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin-left: 20px;
+
+    &:hover {
+      color: #FA7902;
     }
-
-    a{
-        color: #fff;
-        font-size: 1.5rem;
-        text-decoration: none;
-        margin-left: 20px;
-
-        &:hover{
-            color: #FA7902;
-        }
-    }
+  }
 }
 
 
 .burger {
-    width: 35px;
-    height: 25px;
-    position: relative;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-  }
-  
-  .burger span {
-    width: 35px;
-    height: 3px;
-    background-color: #ffffff; 
-    display: block;
+  width: 35px;
+  height: 25px;
+  position: relative;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 35px;
+  height: 3px;
+  background-color: #ffffff;
+  display: block;
+  transition: all 0.3s;
+}
+
+.burger.active {
+  height: 18px;
+}
+
+.burger.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(10px);
+}
+
+.burger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-10px);
+}
+
+.MobileMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-color: #141d2fdb;
+  overflow: hidden;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 23px;
+    font-weight: 400;
     transition: all 0.3s;
   }
-  
-  .burger.active {
-    height: 18px;
+}
+
+
+@media (max-width: 650px) {
+  .header {
+    padding: 0 20px;
+
+    img {
+      max-width: 50px;
+      max-height: 50px;
+    }
   }
 
-  .burger.active span:nth-child(1) {
-    transform: rotate(45deg) translateY(10px);
-  }
-  
-  .burger.active span:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .burger.active span:nth-child(3) {
-    transform: rotate(-45deg) translateY(-10px);
-  }
-
-  .MobileMenu{
+  .burger {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    position: fixed;
-    z-index: 5;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100vh;
-    background-color: #141d2fdb;
-    overflow: hidden;
-
-    a{
-        text-decoration: none;
-        color: #fff;
-        font-size: 23px;
-        font-weight: 400;
-        transition: all 0.3s;
-    }
   }
-  
 
-@media (max-width: 650px){
-    .header{
-        padding: 0 20px;
-
-        img{
-            max-width: 50px;
-            max-height: 50px;
-        }
-    }
-
-    .burger{
-        display: flex;
-    }
-
-    .linkContainer{
-        display: none;
-    }
+  .linkContainer {
+    display: none;
+  }
 }
 
 @media screen and (max-height: 550px) and (orientation: landscape) {
-    .header{
-        padding: 0 20px;
+  .header {
+    padding: 0 20px;
 
-        img{
-            max-width: 50px;
-            max-height: 50px;
-        }
-        a{
-          font-size: 1.2rem;
-  
-         
-      }
+    img {
+      max-width: 50px;
+      max-height: 50px;
     }
 
-    
+    a {
+      font-size: 1.2rem;
+
+
+    }
+  }
+
+
 }
