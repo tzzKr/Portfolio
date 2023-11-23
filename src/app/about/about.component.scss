@@ -7,6 +7,7 @@ $fontTitle: 90px;
   font-weight: 700;
   line-height: 1.2;
   margin: 0;
+
   @media (max-width: 550px) {
     font-size: $mobileFontTitle;
   }
@@ -18,7 +19,7 @@ $fontTitle: 90px;
   height: 100vh;
   width: 100vw;
   max-width: 100%;
-position: relative;
+  position: relative;
   color: #fff;
   overflow: hidden;
 }
@@ -31,14 +32,16 @@ position: relative;
   position: relative;
   z-index: 3;
   display: flex;
+  justify-content: space-between;
   height: 100%;
   align-items: center;
   box-sizing: border-box;
-  
+
 
   span {
     @include fontTitle;
   }
+
   p {
     font-size: 16px;
     font-weight: 400;
@@ -52,82 +55,84 @@ position: relative;
   flex-direction: column;
   max-width: 470px;
   gap: 35px;
-  
 
-  
+
+
 }
-.smallText {
-    display: flex;
-    align-items: center;
-    
 
-    img {
-      height: 50px;
-      width: 50px;
-      object-fit: cover;
-        box-sizing: border-box;
-        margin-right: 30px;
-    }
+.smallText {
+  display: flex;
+  align-items: center;
+
+
+  img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    box-sizing: border-box;
+    margin-right: 30px;
+  }
 }
 
 .circle {
-    border-radius: 50%;
-    height: 453px;
-    width: 453px;
-    border: 4px solid #FA7902;
-    object-fit: cover;
-    
-}
-
-.lineShape{
-    height: 4px;
-    max-width: 20%;
-    width: 100%;
-    background-color: #FA7902;
-    
-   
-    
-}
-
-.shapes{
-    position: absolute;
-    top: calc(33%);
-    // right: 33%;
-    right: 0px;
-    z-index: 2;
-    display: flex;
-    height: 461px;
-    width: 100%;
-    justify-content: flex-end;
-    align-items: center;
+  border-radius: 50%;
+  height: 453px;
+  width: 453px;
+  border: 4px solid #FA7902;
+  object-fit: cover;
 
 }
 
-.shadowBg{
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    height: 608px;
-    width: 750px;
-    transform: translate(50%, 0%);
+.lineShape {
+  height: 4px;
+  max-width: 20%;
+  width: 100%;
+  background-color: #FA7902;
+
+
+
+}
+
+.shapes {
+  position: absolute;
+  top: calc(33%);
+  // right: 33%;
+  right: 0px;
+  z-index: 2;
+  display: flex;
+  height: 461px;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.shadowBg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  height: 608px;
+  width: 750px;
+  transform: translate(50%, 0%);
 }
 
 @media (max-width: 1260px) {
- .shapes{
-   display: none;
- }
+  .shapes {
+    display: none;
+  }
 
- .content {
-  padding: 0 20px;
-  justify-content: center;
-  align-items: center;
+  .content {
+    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
 }
 
-
- 
-}
-.background{
+.background {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -135,7 +140,7 @@ position: relative;
 
 
 @media (max-width: 1260px) {
-  .shadowBg{
+  .shadowBg {
     height: 450px;
     width: auto;
     opacity: 0.8;
@@ -149,45 +154,48 @@ position: relative;
     flex-direction: column;
     align-items: center;
   }
+
   .textContainer {
     max-width: 100%;
 
-    
+
   }
-  .background{
+
+  .background {
     padding-top: 60px;
     height: fit-content;
     padding-bottom: 60px;
   }
-  .shapes{
+
+  .shapes {
     display: none;
   }
 }
 
 @media screen and (max-height: 550px) and (orientation: landscape) {
 
-  .content{
+  .content {
     z-index: 4;
-    span{
+
+    span {
       font-size: $mobileFontTitle;
     }
   }
-  .shapes{
+
+  .shapes {
     display: none;
   }
-  
-  .textContainer{
+
+  .textContainer {
     width: 100%;
     max-width: unset;
-    flex-direction: column;  // Change here to column to align items vertically
-    
-  
+    flex-direction: column; // Change here to column to align items vertically
+
+
   }
 
-  .shadowBg{
+  .shadowBg {
     z-index: 3;
   }
-  
-  }
-  
-  
+
+}

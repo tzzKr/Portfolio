@@ -144,6 +144,72 @@
   }
 }
 
+.phoneImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 260px;
+
+
+
+  a {
+    height: 70px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    position: absolute;
+    border: none;
+    z-index: 3;
+
+
+    img {
+      filter: invert(100);
+      height: 40px;
+      width: 37px;
+    }
+  }
+
+  button {
+    height: 70px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    position: absolute;
+    border: none;
+    z-index: 3;
+
+
+    img {
+      filter: invert(100);
+      height: 40px;
+      width: 37px;
+    }
+  }
+}
+
+.callButton {
+  bottom: 40px;
+  right: 0;
+  cursor: pointer;
+
+  :hover {
+    filter: brightness(1.5);
+  }
+
+}
+
+.declineCall {
+  bottom: 40px;
+  left: 25px;
+}
+
+
+
 .redLine {
   height: 2px;
   width: 100px;

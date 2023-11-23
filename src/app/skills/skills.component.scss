@@ -1,4 +1,3 @@
-
 $normalFont: 16px;
 $mobileFontTitle: 45px;
 $fontTitle: 90px;
@@ -8,6 +7,7 @@ $fontTitle: 90px;
   font-weight: 700;
   line-height: 1.2;
   margin: 0;
+
   @media (max-width: 550px) {
     font-size: $mobileFontTitle;
   }
@@ -43,28 +43,32 @@ $fontTitle: 90px;
   width: 471px;
   align-items: center;
   gap: 34px;
-  
+
 
   span {
     @include fontTitle;
 
   }
+
   p {
     font-size: 16px;
     font-weight: 400;
     margin: 0;
     line-height: 1.2;
-  text-align: right;
+    text-align: right;
 
   }
+
   a {
     width: fit-content !important;
+    height: 64px;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 23px;
     font-weight: 400;
-    padding: 15px 30px;
-    border-radius: 10px;
+    padding: 0px 30px;
+    border-radius: 33px;
     background-color: #fa7902;
     border: none;
     color: #fff;
@@ -73,51 +77,51 @@ $fontTitle: 90px;
     margin-top: 20px;
     text-decoration: none;
 
-    &:hover{
+    &:hover {
       background-color: #FF4747;
       transform: scale(1.1);
-  }
-    
-  }
-}
+    }
 
-.skillIconContainer{
-    display: flex;
-    width: 721px;
-    flex-wrap: wrap;
-    row-gap: 50px;
-    column-gap: 70px;
-    position: relative;
-    z-index: 2;
-}
-
-.iconBox{
-    width: 88px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    &:hover{
-      transform: translate(0, -10px);
   }
 }
 
-.lineShape{
-position: absolute;
-height: 4px;
-width: 58px;
-background-color: #FF4747;
-top: calc(50% - 100px);
-right: 0;
+.skillIconContainer {
+  display: flex;
+  width: 721px;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  column-gap: 70px;
+  position: relative;
+  z-index: 2;
 }
 
-.shadowBg{
-position: absolute;
-top: 0;
-transform: scaley(-1) translate(-66%, -40%);
+.iconBox {
+  width: 88px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  &:hover {
+    transform: translate(0, -10px);
+  }
+}
+
+.lineShape {
+  position: absolute;
+  height: 4px;
+  width: 58px;
+  background-color: #FF4747;
+  top: calc(50% - 100px);
+  right: 0;
+}
+
+.shadowBg {
+  position: absolute;
+  top: 0;
+  transform: scaley(-1) translate(-66%, -40%);
 
 
 
@@ -129,20 +133,20 @@ transform: scaley(-1) translate(-66%, -40%);
     flex-direction: column;
     align-items: center;
     flex-direction: column-reverse;
-  } 
+  }
 
 }
 
 @media (max-width: 391px) {
 
-  
 
-  .mySkillsContainer{
+
+  .mySkillsContainer {
     justify-content: flex-end;
 
 
 
-    span{
+    span {
       font-size: 45px;
     }
   }

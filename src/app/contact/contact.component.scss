@@ -7,6 +7,7 @@ $fontTitle: 90px;
   font-weight: 700;
   line-height: 1.2;
   margin: 0;
+
   @media (max-width: 550px) {
     font-size: $mobileFontTitle;
   }
@@ -51,6 +52,7 @@ $fontTitle: 90px;
 .contactText {
   width: 473px;
 }
+
 .mainPhrase {
   font-weight: 700;
   font-size: 32px !important;
@@ -68,10 +70,10 @@ $fontTitle: 90px;
     font-size: 23px;
     font-weight: 400;
     padding: 15px 30px;
-    border-radius: 10px;
+    border-radius: 33px;
     border: none;
     color: #fff;
-   
+
     background-color: #fa7902;
     cursor: pointer;
 
@@ -84,7 +86,7 @@ $fontTitle: 90px;
   input {
     width: 617px;
     height: 50px;
-    border-radius: 10px;
+    border-radius: 33px;
     background-color: #141d2f00;
     border: 1px solid #ff4747;
     color: #fff;
@@ -106,7 +108,7 @@ $fontTitle: 90px;
     width: 617px;
     height: 150px;
     min-height: 150px;
-    border-radius: 10px;
+    border-radius: 33px;
     background-color: #141d2f00;
     border: 1px solid #ff4747;
     color: #fff;
@@ -117,9 +119,11 @@ $fontTitle: 90px;
     font-size: 16px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
+
     &:hover {
       border: 1px solid #fa7902;
     }
+
     &:focus {
       outline: none;
     }
@@ -128,7 +132,8 @@ $fontTitle: 90px;
   input::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: white;
-    opacity: 1; /* Firefox */
+    opacity: 1;
+    /* Firefox */
   }
 
   input:-ms-input-placeholder {
@@ -144,7 +149,8 @@ $fontTitle: 90px;
   textarea::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: white;
-    opacity: 1; /* Firefox */
+    opacity: 1;
+    /* Firefox */
   }
 
   textarea:-ms-input-placeholder {
@@ -178,9 +184,7 @@ $fontTitle: 90px;
   }
 }
 
-.app-email-sent{
-
-}
+.app-email-sent {}
 
 .mailLoader {
   position: absolute;
@@ -204,6 +208,7 @@ $fontTitle: 90px;
   width: 80px;
   height: 80px;
 }
+
 .lds-ellipsis div {
   position: absolute;
   top: 33px;
@@ -213,42 +218,52 @@ $fontTitle: 90px;
   background: #fff;
   animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
+
 .lds-ellipsis div:nth-child(1) {
   left: 8px;
   animation: lds-ellipsis1 0.6s infinite;
 }
+
 .lds-ellipsis div:nth-child(2) {
   left: 8px;
   animation: lds-ellipsis2 0.6s infinite;
 }
+
 .lds-ellipsis div:nth-child(3) {
   left: 32px;
   animation: lds-ellipsis2 0.6s infinite;
 }
+
 .lds-ellipsis div:nth-child(4) {
   left: 56px;
   animation: lds-ellipsis3 0.6s infinite;
 }
+
 @keyframes lds-ellipsis1 {
   0% {
     transform: scale(0);
   }
+
   100% {
     transform: scale(1);
   }
 }
+
 @keyframes lds-ellipsis3 {
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(0);
   }
 }
+
 @keyframes lds-ellipsis2 {
   0% {
     transform: translate(0, 0);
   }
+
   100% {
     transform: translate(24px, 0);
   }
@@ -260,13 +275,14 @@ $fontTitle: 90px;
     transform: scale(1);
 
   }
-  
+
   50% {
     opacity: 1;
     transform: scale(1.1);
-    
-    
+
+
   }
+
   100% {
     opacity: 0;
     transform: scale(1);
@@ -285,23 +301,24 @@ $fontTitle: 90px;
     opacity: 0;
     transform: translate(0px, 40px) scale(0.9);
   }
-  
+
   50% {
     opacity: 1;
     transform: translate(0px, 40px) scale(0.9);
   }
+
   100% {
     transform: translate(0px, 40px) scale(0.9);
 
   }
 }
 
-.email-sent-confirmation{
+.email-sent-confirmation {
   transform: translate(0px, 40px) scale(0.9);
   position: absolute;
   bottom: 0;
 
-  &.show{
+  &.show {
     animation: emailConfirmation 0.5s linear;
   }
 }
@@ -325,7 +342,7 @@ $fontTitle: 90px;
   }
 }
 
-.shadowBg{
+.shadowBg {
   bottom: 0;
   left: 0;
   position: absolute;
@@ -333,30 +350,34 @@ $fontTitle: 90px;
 }
 
 @media (max-width: 1185px) {
-  .contactContainer{
+  .contactContainer {
     flex-direction: column;
-    align-items: center;   
-    justify-content: space-evenly; 
+    align-items: center;
+    justify-content: space-evenly;
   }
-  .background{
+
+  .background {
     height: 120vh;
   }
 
-  .parentInputContainer{
+  .parentInputContainer {
     display: flex;
     justify-content: flex-start;
   }
-  .input{
+
+  .input {
     width: 473px !important;
   }
-  textarea{
+
+  textarea {
     width: 473px !important;
   }
-  .content{
+
+  .content {
     height: 100vh;
   }
 
-  .shadowBg{
+  .shadowBg {
     height: 500px;
     width: auto;
     opacity: 0.7;
@@ -367,12 +388,12 @@ $fontTitle: 90px;
 
 
 @media (max-width: 550px) {
-  
-  .content{
+
+  .content {
     padding: 0 20px;
   }
 
-  .redLine{
+  .redLine {
     top: 25px;
     width: 20px;
   }
@@ -382,32 +403,34 @@ $fontTitle: 90px;
     right: 20px;
     bottom: 20px;
     cursor: pointer;
-  
-    
+
+
   }
 
-  .parentInputContainer{
+  .parentInputContainer {
     width: 100%;
     justify-content: center;
   }
 
-  .contactText{
+  .contactText {
     max-width: 473px;
     width: 100%;
   }
 
-  .input{
+  .input {
     width: 100% !important;
   }
-  textarea{
+
+  textarea {
     width: 100% !important;
   }
-  .inputContainer{
+
+  .inputContainer {
     width: 90% !important;
-    
-    button{
+
+    button {
       font-size: 18px;
-    font-weight: 300;
+      font-weight: 300;
     }
   }
 
@@ -419,17 +442,20 @@ $fontTitle: 90px;
 }
 
 @media screen and (max-height: 550px) and (orientation: landscape) {
-  .content{
-    span{
+  .content {
+    span {
       font-size: $mobileFontTitle;
     }
   }
-  .redLine{
+
+  .redLine {
     top: 25px;
     width: 30px;
   }
 
-  .background{
+  .background {
     height: 220vh;
-  };
+  }
+
+  ;
 }
