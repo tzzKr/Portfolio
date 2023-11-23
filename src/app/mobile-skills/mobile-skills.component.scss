@@ -7,6 +7,7 @@ $fontTitle: 90px;
   font-weight: 700;
   line-height: 1.2;
   margin: 0;
+
   @media (max-width: 550px) {
     font-size: $mobileFontTitle;
   }
@@ -39,18 +40,18 @@ $fontTitle: 90px;
   @include fontTitle;
 
   display: flex;
-  
+
   flex-direction: column;
   width: 471px;
   align-items: center;
   gap: 34px;
 
   span {
-    
+
     text-align: right;
     justify-content: flex-end;
   }
- 
+
   p {
     font-size: 16px;
     font-weight: 400;
@@ -67,7 +68,7 @@ a {
   font-size: 23px;
   font-weight: 400;
   padding: 15px 30px;
-  border-radius: 10px;
+  border-radius: 33px;
   background-color: #fa7902;
   border: none;
   color: #fff;
@@ -83,31 +84,32 @@ a {
 
 
 .skillIconContainer[_ngcontent-ng-c2552517762] {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    row-gap: 50px;
-    margin: 0 auto;
-    column-gap: 70px;
-    margin-top: 70px;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  margin: 0 auto;
+  column-gap: 70px;
+  margin-top: 70px;
+  align-items: center;
+  justify-content: center;
 }
 
-.iconBox{
-    width: 88px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.iconBox {
+  width: 88px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 
-    &:hover{
-      transform: translate(0, -10px);
+  &:hover {
+    transform: translate(0, -10px);
   }
 }
-.parentIconContainer{
+
+.parentIconContainer {
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -122,86 +124,92 @@ a {
 }
 
 @media (max-width: 820px) {
-  .content{
+  .content {
     padding: 0px 50px;
     box-sizing: border-box;
   }
-  .textContainer{
 
-    span{
+  .textContainer {
+
+    span {
       font-size: 60px;
     }
   }
-  .skillIconContainer{
+
+  .skillIconContainer {
     width: 100%;
     gap: 40px;
     display: flex;
 
-    img{
+    img {
       width: auto;
       height: 50px;
     }
   }
 
-  .skillIconContainer{
+  .skillIconContainer {
     justify-content: center;
   }
 }
 
 
 @media (max-width: 460px) {
-  .content{
+  .content {
     padding: 0px 20px;
     box-sizing: border-box;
   }
-  .mySkillsContainer{
+
+  .mySkillsContainer {
 
     width: unset;
-    
 
-    p{
-    text-align: center;
+
+    p {
+      text-align: center;
 
     }
 
-   
+
   }
-  a{
+
+  a {
     font-size: 17px;
     font-weight: 300;
   }
-  .parentIconContainer{
+
+  .parentIconContainer {
     width: 90%;
     height: 50%;
     align-items: flex-start;
     justify-content: center;
   }
-  .skillIconContainer{
+
+  .skillIconContainer {
     gap: 10px;
     justify-content: center;
 
-    img{
+    img {
       width: auto;
       height: 40px;
     }
 
-    p{
+    p {
       display: none;
     }
   }
-  
-  .iconBox{
+
+  .iconBox {
     width: fit-content;
     height: auto;
   }
 }
 
 @media (max-width: 400px) {
-  .content{
+  .content {
     padding: 0px 20px;
     box-sizing: border-box;
   }
-  
+
 }
 
 @media screen and (max-height: 550px) and (orientation: landscape) {
@@ -209,8 +217,8 @@ a {
     flex-direction: row;
     padding: 0 20px;
     align-items: first baseline
-
   }
+
   .mySkillsContainer {
     width: 50%;
     text-align: left;
@@ -219,27 +227,31 @@ a {
       font-size: $mobileFontTitle;
     }
   }
+
   .parentIconContainer {
     width: 50%;
     overflow: hidden;
     display: flex;
   }
+
   .skillIconContainer {
     gap: 20px;
-    img{
+
+    img {
       width: auto;
       height: 40px;
     }
 
-    p{
+    p {
       display: none;
     }
   }
 
-  .iconBox{
+  .iconBox {
     width: fit-content;
     height: auto;
   }
+
   a {
     position: absolute;
     bottom: 20%;
@@ -249,16 +261,18 @@ a {
 @media screen and (max-height: 750px) and (max-width: 660px) and (orientation: portrait) {
   .skillIconContainer {
     gap: 30px;
-    img{
+
+    img {
       width: auto;
       height: 40px;
     }
 
-    p{
+    p {
       display: none;
     }
   }
-  .iconBox{
+
+  .iconBox {
     width: fit-content;
     height: auto;
   }

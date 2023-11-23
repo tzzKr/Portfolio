@@ -19,7 +19,7 @@
   height: 100%;
 }
 
-.textandbutton{
+.textandbutton {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,7 +27,7 @@
   margin-top: 50px;
 }
 
-.redLine{
+.redLine {
   position: absolute;
   bottom: 150px;
   height: 4px;
@@ -36,37 +36,38 @@
   background-color: #FF4747;
 }
 
-.shadow1{
-position: absolute;
-height: auto;
-width: 350px;
+.shadow1 {
+  position: absolute;
+  height: auto;
+  width: 350px;
 
-top: 0;
-left: 0;
-transform: translate(-145px, 0px);
+  top: 0;
+  left: 0;
+  transform: translate(-145px, 0px);
 }
-.shadow2{
-position: absolute;
-height: auto;
-width: 350px;
 
-bottom: 10%;
-right: 0;
-transform: translate(145px, 0px);
+.shadow2 {
+  position: absolute;
+  height: auto;
+  width: 350px;
+
+  bottom: 10%;
+  right: 0;
+  transform: translate(145px, 0px);
 
 }
 
 .introRightSide {
   display: flex;
-    position: relative;
-    padding-bottom: 20px;
-    box-sizing: border-box;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    gap: calc(50% - 180px);
-    z-index: 2;
-    height: calc(100% - 110px);
+  position: relative;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: calc(50% - 180px);
+  z-index: 2;
+  height: calc(100% - 110px);
 }
 
 .introTextContainer {
@@ -80,7 +81,7 @@ transform: translate(145px, 0px);
   font-size: 23px;
   font-weight: 400;
   padding: 15px 30px;
-  border-radius: 10px;
+  border-radius: 33px;
   background-color: #fa7902;
   border: none;
   color: #fff;
@@ -140,14 +141,13 @@ transform: translate(145px, 0px);
   }
 }
 
-.introTextContainerLS{
+.introTextContainerLS {
   display: none;
 }
 
 
 @media (max-width: 880px) {
-  .ImageContainer {
-  }
+  .ImageContainer {}
 
   .introIam {
     font-size: 48px;
@@ -168,30 +168,30 @@ transform: translate(145px, 0px);
 
 @media (max-height: 790px) and (orientation: landscape) {
 
-  .ImageContainer{
+  .ImageContainer {
     width: 600px;
-  }  
+  }
 }
 
 @media (max-height: 650px) and (orientation: landscape) {
 
-  .ImageContainer{
+  .ImageContainer {
     width: 480px;
-  }  
+  }
 }
 
 @media (min-height: 770px) and (orientation: portrait) {
 
-  .introLinks{
+  .introLinks {
     margin-top: 32px;
   }
 
-  .introRightSide{
-  }
-    
+  .introRightSide {}
+
 }
+
 @media (max-width: 690px) {
-  
+
 
   .introIam {
     font-size: 38px;
@@ -209,15 +209,11 @@ transform: translate(145px, 0px);
     top: calc(100vh - 55%);
   }
 
-  .introRightSide {
-
-
-  }
+  .introRightSide {}
 }
 
 @media (max-width: 580px) {
-  .ImageContainer {
-  }
+  .ImageContainer {}
 
   .introIam {
     font-size: 28px;
@@ -235,10 +231,7 @@ transform: translate(145px, 0px);
     top: calc(100vh - 47%);
   }
 
-  .introRightSide {
-
-
-  }
+  .introRightSide {}
 
   .contactBtn {
     font-size: 17px;
@@ -247,8 +240,7 @@ transform: translate(145px, 0px);
 }
 
 @media (max-width: 450px) {
-  .ImageContainer {
-  }
+  .ImageContainer {}
 
   .flatRoundedBackground {
     top: calc(100vh - 55%);
@@ -276,8 +268,7 @@ transform: translate(145px, 0px);
     }
   }
 
-  .introRightSide {
-  }
+  .introRightSide {}
 }
 
 @media (max-width: 320px) {
@@ -287,8 +278,7 @@ transform: translate(145px, 0px);
     padding-right: 20px;
   }
 
-  .ImageContainer {
-  }
+  .ImageContainer {}
 
   .flatRoundedBackground {
     top: calc(100vh - 45%);
@@ -322,7 +312,7 @@ transform: translate(145px, 0px);
     }
   }
 
-  
+
 
   .contactBtn {
     font-size: 17px;
@@ -334,8 +324,8 @@ transform: translate(145px, 0px);
 
 @media (max-height: 550px) and (orientation: landscape) {
 
-  
-  
+
+
 
   .introIam {
     font-size: 22px;
@@ -348,27 +338,27 @@ transform: translate(145px, 0px);
   .introDev {
     font-size: 21px;
   }
-  
 
-  
-  .introLinks{
+
+
+  .introLinks {
     flex-direction: row;
     gap: 10px;
 
-    img{
+    img {
       width: 30px;
       height: auto;
     }
   }
 
-  .introRightSide{
-    
+  .introRightSide {
 
-    a{
+
+    a {
       padding: 10px 20px;
       font-size: 1rem;
     }
   }
 
-   
+
 }

@@ -118,7 +118,9 @@ $fontTitle: 90px;
 }
 
 @media (max-width: 1260px) {
-  .shapes {
+
+  .shapes,
+  .circle {
     display: none;
   }
 
@@ -167,7 +169,8 @@ $fontTitle: 90px;
     padding-bottom: 60px;
   }
 
-  .shapes {
+  .shapes,
+  .circle {
     display: none;
   }
 }
@@ -182,9 +185,12 @@ $fontTitle: 90px;
     }
   }
 
-  .shapes {
+  .shapes,
+  .circle {
     display: none;
   }
+
+
 
   .textContainer {
     width: 100%;
